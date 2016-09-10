@@ -1,6 +1,6 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: 
+* Студент: Unknown Racoon
 * Наставник: `Никита Рогатнев`.
 
 ---
