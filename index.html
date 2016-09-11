@@ -7,23 +7,30 @@
   <body>
   	<header class="page-header">
   		<div class="page-header__logo">
-  			<img src="#" alt="logo" width="" height="">
+  			<a href="#"><img src="#" alt="logo" width="" height=""></a>
   		</div>
   		<a href="#"></a>
+      <ul>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a href="#">Вязание на заказ</a></li>
+        <li><a href="#">Поиск по сайту</a></li>
+        <li><a href="#">Корзина<span>:пока пуста</span></a></li>
+      </ul>
   	</header>
   	<main>
-  		<h1>Милые штуки ручной работы для дома</h1>
-  		<div class="stuff-type">
-  			<h2 class="stuff-type__name">
-  				<a href="#">Предметы интерьера</a>
-  			</h2>
-  		</div>
-  		<div class="stuff-type">
-  			<h2 class="stuff-type__name">
-  				<a href="#">Детские игрушки</a>
-  			</h2>
-  		</div>
-
+      <section class="handmade">
+    		<h1>Милые штуки ручной работы для дома</h1>
+    		<div class="handmade__stuff-type">
+    			<h2>
+    				<a href="#">Предметы интерьера</a>
+    			</h2>
+    		</div>
+    		<div class="handmade__stuff-type">
+    			<h2>
+    				<a href="#">Детские игрушки</a>
+    			</h2>
+    		</div>
+      </section>
   		<section class="weekly-product">
   			<h2>
   				Вязаные корзинки
@@ -56,46 +63,48 @@
   			<h2>
   				Коротко о нас:
   			</h2>
-  			<p>
-  				Экологически чистые материалы
-  			</p>
-  			<p>
-  				Скандинавский стиль по российской цене
-  			</p>
-  			<p>
-  				Увеличивает лайки на фотографиях
-  			</p>
-  			<p>
-  				Связано вручную с любовью и умилением
-  			</p>
-  			<p>
-  				Поддержка отечественного производителя
-  			</p>
-  			<p>
-  				Поставляется в подарочной упаковке
-  			</p>
+        <ul>
+    			<li>
+    				Экологически чистые материалы
+    			</li>
+    			<li>
+    				Скандинавский стиль по российской цене
+    			</li>
+    			<li>
+    				Увеличивает лайки на фотографиях
+    			</li>
+    			<li>
+    				Связано вручную с любовью и умилением
+    			</li>
+    			<li>
+    				Поддержка отечественного производителя
+    			</li>
+    			<li>
+    				Поставляется в подарочной упаковке
+    			</li>
+        </ul>
   		</section>
   		<section class="reviews">
-  			<h2>Отзывы</h2>
-  			<p>
-  				Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
-  			</p>
-  			<span class="reviews__author">
-  				Анастасия Красильникова
-  			</span>
-  			<span class="reviews__author-contact">
-					@misssssiskras
-				</span>
-				<div class="reviews__nav">
-				<!--Или сделать классы ниже модификаторами? -->
-					<a class="nav-prev" href="#">Prev</a>
-					<a class="nav-next" href="#">Next</a>
-				</div>
+    		<h2>Отзывы</h2>
+          <article class="reviews__item review">
+    			<p>
+    				Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+    			</p>
+    			<span class="review__author">
+    				Анастасия Красильникова
+    			</span>
+    			<span class="review__author-contact">
+  					@misssssiskras
+  				</span>
+        </article>
+        <div class="reviews__nav"> 
+          <a class="reviews__nav-item reviews__nav-item--prev" href="#"></a> 
+          <a class="reviews__nav-item reviews__nav-item--next" href="#"></a> 
+        </div>
 				<a class="reviews__add-btn" href="#">Написать</a>		
   		</section>
   		<section class="contacts">
-  			<b>Контакты</b>
-  			<!-- у спанов ниже должны быть классы? -->
+  			<h2>Контакты</h2>
   			<div class="contacts__e-mail">
   				<span>
   					e-mail:
@@ -118,16 +127,35 @@
   	</main>
   	<footer class="page-footer">
   		<div class="page-footer__social">
-  			<span>inst</span>
-  			<span>fb</span>
-  			<span>tw</span>
+        <ul>
+          <li>
+            <a href="#">inst</a>
+          </li>
+          <li>
+            <a href="#">fb</a>
+          </li>
+          <li>
+            <a href="#">tw</a>
+          </li>
+        </ul>
   		</div>
   		<div class="page-footer__made-by">
   			<span>
   				Разработано:
   			</span>
-  			<img src="#" alt="HTML-Academy">
+  			<a href="#">
+          <img src="#" alt="HTML-Academy">
+        </a>
   		</div>
-  	</footer>    
+  	</footer>
+
+    <article class="modal-add-to-cart">
+      <h1>Добавить в корзину</h1>
+      <span>Выберите размер:</span>
+      <a class="modal-add-to-cart__size--active" href="#">S</a>
+      <a class="modal-add-to-cart__size" href="#">M</a>
+      <a class="modal-add-to-cart__size" href="#">L</a>
+      <a class="modal-add-to-cart__add-btn" href="#">Добавить</a>
+    </article>    
   </body>
 </html>
