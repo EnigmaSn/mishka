@@ -1,23 +1,39 @@
 {
-  "name": "185078-mishka",
+  "name": "mishka",
   "version": "0.1.0",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
-  "author": "Анна Волкова",
+  "description": "Личный проект Мишка от HTML Academy",
+  "author": "Анна Пономарёва",
   "repository": {
     "type": "git",
-    "url": "git@github.com:htmlacademy-adaptive/185078-mishka.git"
+    "url": "git@github.com:rogatnev-nikita/mishka.git"
   },
   "bugs": {
-    "url": "https://github.com/htmlacademy-adaptive/185078-mishka/issues"
+    "url": "https://github.com/rogatnev-nikita/mishka/issues"
   },
-  "homepage": "https://github.com/htmlacademy-adaptive/185078-mishka",
+  "homepage": "https://github.com/rogatnev-nikita/mishka",
   "devDependencies": {
-    "lintspaces-cli": "0.4.0"
+    "autoprefixer": "6.4.1",
+    "grunt": "1.0.1",
+    "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-watch": "1.0.0",
+    "grunt-postcss": "0.8.0",
+    "grunt-sass": "1.2.1",
+    "@htmlacademy/editorconfig-cli": "0.0.7"
   },
   "scripts": {
-    "test": "lintspaces -e .editorconfig -i 'js-comments' -i 'html-comments' *.html {less,sass,postcss}/*.* {less,sass,postcss}/**/*.* *.{js,json} js/*.{js,json} js/**/*.{js,json}"
+    "test": "editorconfig-cli",
+    "build": "grunt sass && grunt postcss",
+    "start": "npm run build && grunt serve"
   },
+  "editorconfig-cli": [
+    "*.html",
+    "*.json",
+    "*.js",
+    "js/**/*.js",
+    "img/**/*.svg",
+    "sass/**/*.{sass,scss}"
+  ],
   "engines": {
     "node": "6.5"
   }
