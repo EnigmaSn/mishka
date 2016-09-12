@@ -150,12 +150,14 @@
   	</footer>
 
     <article class="modal-add-to-cart">
-      <h1>Добавить в корзину</h1>
-      <span>Выберите размер:</span>
-      <a class="modal-add-to-cart__size--active" href="#">S</a>
-      <a class="modal-add-to-cart__size" href="#">M</a>
-      <a class="modal-add-to-cart__size" href="#">L</a>
-      <a class="modal-add-to-cart__add-btn" href="#">Добавить</a>
+      <form action="#">
+        <h1>Добавить в корзину</h1>
+        <span>Выберите размер:</span>
+        <input class="modal-add-to-cart__size--active" type="radio" value="S">
+        <input class="modal-add-to-cart__size" type="radio" value="M">
+        <input class="modal-add-to-cart__size" type="radio" value="L">
+        <button class="modal-add-to-cart__add-btn" type="submit">Добавить</button>
+      </form>
     </article>    
   </body>
 </html>
