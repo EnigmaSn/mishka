@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header class="page-header">
   		<div class="page-header__logo">
-  			<a href="#"><img src="#" alt="logo" width="" height=""></a>
+  			<a href="#"><img src="img/logo-mobile.svg" alt="logo" width="" height=""></a>
   		</div>
-  		<a href="#"></a>
-      <ul>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li><a href="form.html">Вязание на заказ</a></li>
-        <li><a href="#">Поиск по сайту</a></li>
-        <li><a href="#">Корзина<span>:пока пуста</span></a></li>
-      </ul>
+  		<a class="page-header__menu--close" href="#"></a>
+      <div class="page-header__menu--open">
+        <ul>
+          <li><a href="catalog.html">Каталог товаров</a></li>
+          <li><a href="form.html">Вязание на заказ</a></li>
+          <li><a href="#">Поиск по сайту</a></li>
+          <li><a href="#">Корзина<span>:пока пуста</span></a></li>
+        </ul>
+      </div>
   	</header>
   	<main>
       <section class="handmade">
     		<h1>Милые штуки ручной работы для дома</h1>
-    		<div class="handmade__stuff-type">
+    		<div class="handmade__stuff-type-1">
     			<h2>
     				<a href="#">Предметы интерьера</a>
     			</h2>
     		</div>
-    		<div class="handmade__stuff-type">
+    		<div class="handmade__stuff-type-2">
     			<h2>
     				<a href="#">Детские игрушки</a>
     			</h2>
@@ -97,11 +100,11 @@
   					@misssssiskras
   				</span>
         </article>
-        <div class="reviews__nav"> 
-          <a class="reviews__nav-item reviews__nav-item--prev" href="#"></a> 
-          <a class="reviews__nav-item reviews__nav-item--next" href="#"></a> 
+        <div class="reviews__nav">
+          <a class="reviews__nav-item reviews__nav-item--prev" href="#"></a>
+          <a class="reviews__nav-item reviews__nav-item--next" href="#"></a>
         </div>
-				<a class="reviews__add-btn" href="#">Написать</a>		
+				<a class="reviews__add-btn" href="#">Написать</a>
   		</section>
   		<section class="contacts">
   			<h2>Контакты</h2>
@@ -158,6 +161,6 @@
         <input class="modal-add-to-cart__size" type="radio" value="L">
         <button class="modal-add-to-cart__add-btn" type="submit">Добавить</button>
       </form>
-    </div>    
+    </div>
   </body>
 </html>
