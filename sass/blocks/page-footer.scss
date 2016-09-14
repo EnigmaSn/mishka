@@ -1,0 +1,19 @@
+.page-footer {
+  background-color: #f1f1f1;
+}
+
+.page-footer__social {
+    li {
+      list-style-type: none;
+    }
+    a {
+      text-decoration: none;
+    }
+}
+
+.page-footer__made-by {
+    span {
+      font-size: 19px;
+      font-weight: bold;
+    }
+}

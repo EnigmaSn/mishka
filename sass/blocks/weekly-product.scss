@@ -1,0 +1,51 @@
+.weekly-product {
+  background-color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+    h2 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    p {
+      font-size: 15px;
+      line-height: 24px;
+    }
+}
+
+.weekly-product__title {
+  color: #63d1bb;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.weekly-product__characteristics {
+  font-size: 15px;
+  line-height: 20px;
+  // как схлопнуть рамки?
+    td {
+      border-bottom: 1px solid #444444;
+    }
+}
+
+.weekly-product__photo {
+  margin-left: 0;
+}
+
+.weekly-product__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+
+.weekly-product__order-btn {
+  color: #000000;
+  font-size: 17px;
+  // line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid black;
+  display: block;
+}

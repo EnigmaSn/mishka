@@ -1,19 +1,14 @@
-body {
-  background: gray;
-  font-family: "opensans", "Arial", "Serif";
-}
-
-@font-face {
-	font-family: "opensans";
-	src: url("../fonts/opensans.woff2") format("woff2"),
-	url("../fonts/opensans.woff") format("woff");
-}
-
-@font-face {
-	font-family: "opensansbold";
-	src: url("../fonts/opensansbold.woff2") format("woff2"),
-	url("../fonts/opensansbold.woff") format("woff");
-}
+@import "global/body.scss";
+@import "global/fonts.scss";
 
 @import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+
+@import "blocks/modal-add-to-cart.scss";
+
 @import "blocks/handmade.scss";
+@import "blocks/weekly-product.scss";
+@import "blocks/about-us.scss";
+@import "blocks/reviews.scss";
+@import "blocks/review.scss";
+@import "blocks/contacts.scss";
