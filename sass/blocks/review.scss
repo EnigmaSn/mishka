@@ -1,6 +1,9 @@
-.review p {
-  font-size: 15px;
-  line-height: 30px;
+.review {
+
+    p {
+      font-size: 15px;
+      line-height: 30px;
+    }
 }
 
 .review__author {
@@ -13,10 +16,10 @@
 }
 
 .reviews__add-btn {
-  color: #000000;
+  color: $black;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
-  border: 2px solid black;
+  border: 2px solid $black;
   display: block;
 }

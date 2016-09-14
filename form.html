@@ -8,15 +8,17 @@
 	<body>
 		<header class="page-header">
 	  	<div class="page-header__logo">
-	  		<a href="#"><img src="#" alt="logo" width="" height=""></a>
+	  		<a href="#"><img src="img/logo-mobile.svg" alt="logo" width="86" height="35"></a>
 	  	</div>
-	  	<a href="#"></a>
-	    <ul>
-	      <li><a href="catalog.html">Каталог товаров</a></li>
-	      <li><a href="#">Вязание на заказ</a></li>
-	      <li><a href="#">Поиск по сайту</a></li>
-	      <li><a href="#">Корзина<span>:пока пуста</span></a></li>
-	    </ul>
+	  	<a class="page-header__menu--close" href="#"></a>
+      <div class="page-header__menu--open">
+  	    <ul>
+  	      <li><a href="catalog.html">Каталог товаров</a></li>
+  	      <li><a href="#">Вязание на заказ</a></li>
+  	      <li><a href="#">Поиск по сайту</a></li>
+  	      <li><a href="#">Корзина<span>:пока пуста</span></a></li>
+  	    </ul>
+      </div>
 	  </header>
 	  <main>
 	  	<section class="knitting-order">
@@ -83,7 +85,7 @@
 	  		</div>
 	  		<div class="knitting-order-form__more">
 	  			<label for="more">Доп</h2>
-	  			<input id="more" type="text" placeholder="Опишите все ваши пожелания к заказу">
+          <textarea id="more" name="name" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
 	  		</div>
 	  		<div class="knitting-order-form__order">
 	  			<span>
@@ -112,7 +114,7 @@
 	  				Разработано:
 	  			</span>
 	  			<a href="#">
-	          <img src="#" alt="HTML-Academy">
+	          <img src="img/logo-htmlacademy.svg" alt="HTML-Academy">
 	        </a>
 	  		</div>
 	  	</footer>

@@ -1,5 +1,5 @@
 .page-header {
-  background-color: #ffffff;
+  background-color: $body-bg;
 }
 
 .page-header__menu--close {
@@ -15,6 +15,7 @@
   list-style-type: none;
   margin-left: 0;
 	padding-left: 0;
+
     a {
       text-decoration: none;
       font-size: 17px;

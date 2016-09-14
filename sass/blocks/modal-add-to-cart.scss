@@ -1,7 +1,8 @@
 .modal-add-to-cart {
-  background-color: #ffffff;
+  background-color: $body-bg;
   padding-left: 30px;
   padding-right: 30px;
+
     h1 {
       font-size: 25px;
       line-height: 30px;
@@ -17,12 +18,12 @@
 
 .modal-add-to-cart__add-btn {
   text-align: center;
-  color: #ffffff;
+  color: $white;
   font-size: 17px;
   text-align: center;
   text-decoration: none;
-  background-color: #63d1bb;
-  border: 2px solid #63d1bb;
+  background-color: $light-green;
+  border: 2px solid $light-green;
   display: block;
   width: 100%;
 }

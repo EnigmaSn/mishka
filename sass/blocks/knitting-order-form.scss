@@ -1,0 +1,73 @@
+.knitting-order-form {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: $body-bg;
+
+    h2 {
+      color: $light-green;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    label {
+      font-size: 17px;
+      line-height: 18px;
+    }
+}
+
+.knitting-order-form__type {
+}
+
+.knitting-order-form__name {
+    label {
+      display:block;
+    }
+}
+
+.knitting-order-form__phone {
+    label {
+      color: $light-green;
+      font-size: 17px;
+      font-weight: bold;
+    }
+}
+
+.knitting-order-form__e-mail {
+    label {
+      color: $light-green;
+      font-size: 17px;
+      font-weight: bold;
+
+      // не работает
+      display: block;
+    }
+}
+
+.knitting-order-form__more {
+    label {
+      color: $light-green;
+      font-size: 17px;
+      font-weight: bold;
+      display: block;
+    }
+    textarea {
+      font-size: 17px;
+    }
+}
+
+.knitting-order-form__order {
+
+    span {
+      font-size: 14px;
+    }
+}
+
+.knitting-order-form__order-btn {
+  color: $black;
+  background-color: $body-bg;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid $black;
+  display: block;
+  width: 100%;
+}

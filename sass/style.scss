@@ -1,14 +1,24 @@
 @import "global/body.scss";
 @import "global/fonts.scss";
+@import "global/variables.scss";
 
 @import "blocks/page-header.scss";
 @import "blocks/page-footer.scss";
 
 @import "blocks/modal-add-to-cart.scss";
 
+// index.html
 @import "blocks/handmade.scss";
 @import "blocks/weekly-product.scss";
 @import "blocks/about-us.scss";
 @import "blocks/reviews.scss";
 @import "blocks/review.scss";
 @import "blocks/contacts.scss";
+
+// catalog.html
+@import "blocks/catalog-items.scss";
+@import "blocks/production-process.scss";
+
+// form.html
+@import "blocks/knitting-order.scss";
+@import "blocks/knitting-order-form.scss";

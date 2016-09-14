@@ -1,7 +1,8 @@
 .weekly-product {
-  background-color: #fff;
+  background-color: $body-bg;
   padding-left: 30px;
   padding-right: 30px;
+
     h2 {
       font-size: 25px;
       line-height: 30px;
@@ -13,7 +14,7 @@
 }
 
 .weekly-product__title {
-  color: #63d1bb;
+  color: $light-green;
   font-weight: bold;
   font-size: 17px;
   line-height: 17px;
@@ -22,10 +23,6 @@
 .weekly-product__characteristics {
   font-size: 15px;
   line-height: 20px;
-  // как схлопнуть рамки?
-    td {
-      border-bottom: 1px solid #444444;
-    }
 }
 
 .weekly-product__photo {
@@ -41,11 +38,11 @@
 }
 
 .weekly-product__order-btn {
-  color: #000000;
+  color: $black;
   font-size: 17px;
   // line-height: 24px;
   text-align: center;
   text-decoration: none;
-  border: 2px solid black;
+  border: 2px solid $black;
   display: block;
 }
