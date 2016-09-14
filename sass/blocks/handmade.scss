@@ -28,12 +28,18 @@
       color: $white;
       text-decoration: none;
     }
+    &--dark-green {
+      background-color: $dark-green;
+    }
+    &--dark-green {
+      background-color: $dark-green;
+    }
 }
 
-.handmade__stuff--light-green {
-  background-color: $light-green;
-}
-
-.handmade__stuff--dark-green {
-  background-color: $dark-green;
-}
+// .handmade__stuff--light-green {
+//   background-color: $light-green;
+// }
+//
+// .handmade__stuff--dark-green {
+//   background-color: $dark-green;
+// }
