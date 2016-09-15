@@ -28,6 +28,10 @@
       color: $light-green;
       font-size: 17px;
       font-weight: bold;
+      width: 100%;
+    }
+    input {
+      width: 100%;
     }
 }
 
@@ -36,10 +40,12 @@
       color: $light-green;
       font-size: 17px;
       font-weight: bold;
-
-      // не работает
-      display: block;
+      width: 100%;
     }
+    input {
+      width: 100%;
+    }
+
 }
 
 .knitting-order-form__more {
@@ -47,10 +53,11 @@
       color: $light-green;
       font-size: 17px;
       font-weight: bold;
-      display: block;
+      width: 100%;
     }
     textarea {
       font-size: 17px;
+      width: 100%;
     }
 }
 
