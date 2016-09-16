@@ -1,21 +1,25 @@
 .page-header {
   background-color: $body-bg;
+  display: flex;
+  justify-content: flex-end;
+  @include container;
 }
 
 .page-header__menu--close {
   display: block;
   content: "";
-  padding: 20px;
   background-image: url(../img/icon-menu-open.svg);
   background-repeat: no-repeat;
-  // background-position: 0px 0px;
 }
 
-.page-header__menu--open li {
-  list-style-type: none;
-  margin-left: 0;
-	padding-left: 0;
+.page-header__menu--open {
+  display: none;
 
+    li {
+      list-style-type: none;
+      margin-left: 0;
+    	padding-left: 0;
+    }
     a {
       text-decoration: none;
       font-size: 17px;
