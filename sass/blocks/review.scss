@@ -1,4 +1,5 @@
 .review {
+  @include container;
 
     p {
       font-size: 15px;

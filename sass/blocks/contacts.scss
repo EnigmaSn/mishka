@@ -1,5 +1,6 @@
 .contacts {
   background-color: $body-bg;
+  @include container;
 
     h2 {
       font-size: 18px;

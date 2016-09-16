@@ -1,5 +1,6 @@
 .knitting-order {
   background-color: $body-bg;
+  @include container;
 
     h1 {
       background-color: $gray-bg;

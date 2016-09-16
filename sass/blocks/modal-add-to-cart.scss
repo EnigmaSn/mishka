@@ -2,6 +2,7 @@
   background-color: $body-bg;
   padding-left: 30px;
   padding-right: 30px;
+  @include container;
 
     h1 {
       font-size: 25px;

@@ -1,5 +1,6 @@
 .page-footer {
   background-color: $gray-bg;
+  @include container;
 }
 
 .page-footer__social {

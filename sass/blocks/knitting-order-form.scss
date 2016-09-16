@@ -2,6 +2,7 @@
   padding-left: 30px;
   padding-right: 30px;
   background-color: $body-bg;
+  @include container;
 
     h2 {
       color: $light-green;

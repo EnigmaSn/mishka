@@ -6,14 +6,15 @@
 }
 
 .page-header__menu--close {
-  display: block;
   content: "";
   background-image: url(../img/icon-menu-open.svg);
   background-repeat: no-repeat;
 }
 
 .page-header__menu--open {
-  display: none;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 
     li {
       list-style-type: none;

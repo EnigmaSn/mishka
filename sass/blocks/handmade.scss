@@ -2,6 +2,7 @@
   background-color: $body-bg;
   background-image: url(../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
+  @include container;
 
     h1 {
       font-size: 27px;
@@ -9,20 +10,19 @@
       text-align: center;
       margin: 0;
 
-      padding-top: 40px;
-      padding-bottom: 40px;
-      padding-left: 40px;
-      padding-right: 40px;
+      // padding-top: 40px;
+      // padding-bottom: 40px;
+      // padding-left: 40px;
+      // padding-right: 40px;
     }
 }
 
 .handmade__stuff {
     h2 {
-      margin: 0;
-      padding-left: 30px;
+      @include side-margin;
       padding-top: 30px;
       padding-bottom: 30px;
-      width: 130px;
+      // width: 130px;
     }
     a {
       color: $white;
@@ -35,11 +35,3 @@
       background-color: $dark-green;
     }
 }
-
-// .handmade__stuff--light-green {
-//   background-color: $light-green;
-// }
-//
-// .handmade__stuff--dark-green {
-//   background-color: $dark-green;
-// }

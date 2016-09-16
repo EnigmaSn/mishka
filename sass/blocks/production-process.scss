@@ -1,6 +1,7 @@
 .production-process {
   background-color: $body-bg;
   padding-bottom: 30px;
+  @include container;
 
     h2 {
       font-size: 17px;
@@ -15,7 +16,7 @@
       padding-left: 30px;
       padding-right: 30px;
       padding-top: 30px;
-      padding-bottom: 30px;      
+      padding-bottom: 30px;
     }
 }
 
