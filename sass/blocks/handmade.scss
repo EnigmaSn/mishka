@@ -1,14 +1,19 @@
 .handmade {
   background-color: $body-bg;
   background-image: url(../img/hero-mobile@1x.jpg);
+  background-position: 50% 21% ;
   background-repeat: no-repeat;
   width: 100%;
+  display: flex;
+  flex-direction: row;
 
     h1 {
       font-size: 27px;
       line-height: 30px;
       text-align: center;
       margin: 0;
+      padding-top: 60px;
+      padding-bottom: 230px;
     }
 }
 
@@ -16,12 +21,18 @@
   @include container;
 }
 
+.handmade__stuffs {
+  display: flex;
+  flex-direction: column;
+}
+
 .handmade__stuff {
+  min-width: 320px;
+
     h2 {
-      @include side-margin;
-      padding-top: 30px;
-      padding-bottom: 30px;
-      // width: 130px;
+      margin: 0;
+      padding: 30px;
+      width: 100%;
     }
     a {
       color: $white;
@@ -36,5 +47,18 @@
 }
 
 @media #{$tablet-widths} {
+  .handmade__stuffs {
+    flex-direction: row;
+    width: 100%;
+  }
 
+  .handmade__stuff {
+    min-width: 334px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .handmade__stuff {
+    min-width: 525px;
+  }
 }
