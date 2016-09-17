@@ -31,3 +31,8 @@
 		 	margin-right: 50px;
 	  }
 }
+
+@mixin btn-padding {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

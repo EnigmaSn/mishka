@@ -1,6 +1,7 @@
 .reviews {
   background-color: $body-bg;
   width: 100%;
+  @include side-margin;
 
     h2 {
       font-size: 25px;
@@ -10,4 +11,21 @@
 
 .reviews__wrapper {
   @include container;
+
+}
+
+@media #{$tablet-widths} {
+  .reviews__wrapper {
+    display: flex;
+  }
+  .reviews__item {
+    width: 640px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .reviews {
+    margin-left: 225px;
+    margin-right: 225px;
+  }
 }

@@ -1,7 +1,7 @@
 .contacts {
   background-color: $body-bg;
   width: 100%;
-
+  @include side-padding;
     h2 {
       font-size: 18px;
       line-height: 30px;
@@ -47,4 +47,14 @@
   text-decoration: none;
   border: 2px solid $black;
   display: block;
+}
+
+@media #{$tablet-widths} {
+
+}
+
+@media #{$desktop-widths} {
+  .contacts {
+    padding-left: 225px;
+  }
 }

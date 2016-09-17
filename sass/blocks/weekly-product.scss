@@ -5,10 +5,12 @@
     h2 {
       font-size: 25px;
       line-height: 30px;
+      @include side-margin;
     }
     p {
       font-size: 15px;
       line-height: 24px;
+      @include side-margin;
     }
 }
 
@@ -21,15 +23,19 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 17px;
+  @include side-margin;
 }
 
 .weekly-product__characteristics {
   font-size: 15px;
   line-height: 20px;
+  @include side-margin;
 }
 
 .weekly-product__photo {
-  margin-left: 0;
+  @include side-margin;
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .weekly-product__price {
@@ -38,6 +44,9 @@
   font-weight: bold;
   text-align: center;
   display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include side-margin;
 }
 
 .weekly-product__order-btn {
@@ -48,4 +57,23 @@
   text-decoration: none;
   border: 2px solid $black;
   display: block;
+  @include btn-padding;
+}
+
+// Доделать
+
+@media #{$tablet-widths} {
+  .weekly-product__titles {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .weekly-product__item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .weekly-product__photo {
+    order: 1;
+  }
 }

@@ -1,6 +1,7 @@
 .about-us {
   background-color: $body-bg;
   width: 100%;
+  @include side-padding;
 
     h2 {
       font-size: 25px;
@@ -17,4 +18,26 @@
 
 .about-us__wrapper {
   @include container;
+}
+
+@media #{$tablet-widths} {
+  .about-us ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us li {
+    width: 334px;
+  }
+}
+
+// не перестраиваются в две колонки
+@media #{$desktop-widths} {
+  .about-us {
+    padding-left: 225px;
+  	padding-right: 225px;
+  }
+  .about-us li {
+    width: 350px;
+  }
 }
