@@ -1,6 +1,6 @@
 .knitting-order {
   background-color: $body-bg;
-  @include container;
+  width: 100%;
 
     h1 {
       background-color: $gray-bg;
@@ -11,7 +11,9 @@
     p {
       font-size: 13px;
       line-height: 24px;
-      padding-left: 30px;
-      padding-right: 30px;
     }
+}
+
+.knitting-order__wrapper {
+  @include container;
 }

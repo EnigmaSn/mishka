@@ -1,5 +1,9 @@
 .page-footer {
   background-color: $gray-bg;
+  width: 100%;
+}
+
+.page-footer__wrapper {
   @include container;
 }
 

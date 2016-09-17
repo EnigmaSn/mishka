@@ -2,6 +2,10 @@
   background-color: $body-bg;
   display: flex;
   justify-content: flex-end;
+  width: 100%;
+}
+
+.page-header__wrapper {
   @include container;
 }
 

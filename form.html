@@ -8,95 +8,102 @@
 	</head>
 	<body>
 		<header class="page-header">
-	  	<div class="page-header__logo">
-	  		<a href="#"><img src="img/logo-mobile.svg" alt="logo" width="86" height="35"></a>
-	  	</div>
-	  	<a class="page-header__menu--close" href="#"></a>
-      <div class="page-header__menu--open">
-  	    <ul>
-  	      <li><a href="catalog.html">Каталог товаров</a></li>
-  	      <li><a href="#">Вязание на заказ</a></li>
-  	      <li><a href="#">Поиск по сайту</a></li>
-  	      <li><a href="#">Корзина<span>:пока пуста</span></a></li>
-  	    </ul>
+      <div class="page-header__wrapper">
+  	  	<div class="page-header__logo">
+  	  		<a href="#"><img src="img/logo-mobile.svg" alt="logo" width="86" height="35"></a>
+  	  	</div>
+  	  	<a class="page-header__menu--close" href="#"></a>
+        <div class="page-header__menu--open">
+    	    <ul>
+    	      <li><a href="catalog.html">Каталог товаров</a></li>
+    	      <li><a href="#">Вязание на заказ</a></li>
+    	      <li><a href="#">Поиск по сайту</a></li>
+    	      <li><a href="#">Корзина<span>:пока пуста</span></a></li>
+    	    </ul>
+        </div>
       </div>
 	  </header>
 	  <main>
 	  	<section class="knitting-order">
-	  		<h1>Вязание на заказ</h1>
-	  		<p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-	  	</section>
+        <div class="knitting-order__wrapper">
+  	  		<h1>Вязание на заказ</h1>
+  	  		<p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
+      </section>
 	  	<form class="knitting-order-form" action="#">
-	  		<div class="knitting-order-form__type">
-	  			<h2>Тип</h2>
-	  			<div>
-	  				<label>
-	  					<input type="radio">
-	  					Аксессуар для интерьера
-	  				</label>
-	  				<label>
-	  					<input type="radio">
-	  					Детская игрушка
-	  				</label
-	  			</div>
-	  		</div>
-	  		<div class="knitting-order-form__color">
-	  			<h2>Цвет</h2>
-	  			<div class="knitting-order-form__color-item">
-	  				<input id="white" type="checkbox" checked>
-				  	<label for="white">Белый</label>
-	  			</div>
-	  			<div class="knitting-order-form__color-item">
-	  				<input id="grey" type="checkbox" checked>
-				  	<label for="grey">Серый</label>
-	  			</div>
-	  			<div class="knitting-order-form__color-item">
-	  				<input id="tiffany" type="checkbox">
-				  	<label for="tiffany">"Тиффани"</label>
-	  			</div>
-	  			<div class="knitting-order-form__color-item">
-	  				<input id="black" type="checkbox">
-				  	<label for="black">Черный</label>
-	  			</div>
-	  			<div class="knitting-order-form__color-item">
-	  				<input id="pink" type="checkbox">
-				  	<label for="pink">Розовый</label>
-	  			</div>
-	  			<div class="knitting-order-form__color-item">
-	  				<input id="orange" type="checkbox">
-				  	<label for="orange">Оранжевый</label>
-	  			</div>
-	  		</div>
-	  		<div class="knitting-order-form__name">
-	  			<h2>ФИО</h2>
-	  			<label for="name">Имя:</label>
-	  			<input id="name" type="text" placeholder="Введите ваше имя">
-	  			<label for="last-name">Фамилия:</label>
-	  			<input id="last-name" type="text" placeholder="Укажите фамилию">
-	  			<label for="middle-name">Отчество:</label>
-	  			<input id="middle-name" type="text" placeholder="Отчество, если желаете">
-	  		</div>
-	  		<div class="knitting-order-form__phone">
-	  			<label for="phone">Тел</h2>
-	  			<input id="phone" type="text" placeholder="+7 XXX XX XX">
-	  		</div>
-	  		<div class="knitting-order-form__e-mail">
-	  			<label for="e-mail">E-mail</label>
-	  			<input id="e-mail" type="text" placeholder="Ваш e-mail">
-	  		</div>
-	  		<div class="knitting-order-form__more">
-	  			<label for="more">Доп</h2>
-          <textarea id="more" name="name" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-	  		</div>
-	  		<div class="knitting-order-form__order">
-	  			<span>
-	  				Все поля обязательны для заполнения
-	  			</span>
-	  			<button class="knitting-order-form__order-btn" type="submit">Отправить заказ</button>
-	  		</div>
+        <div class="knitting-order-form__wrapper">
+  	  		<div class="knitting-order-form__type">
+  	  			<h2>Тип</h2>
+  	  			<div>
+  	  				<label>
+  	  					<input type="radio">
+  	  					Аксессуар для интерьера
+  	  				</label>
+  	  				<label>
+  	  					<input type="radio">
+  	  					Детская игрушка
+  	  				</label
+  	  			</div>
+  	  		</div>
+  	  		<div class="knitting-order-form__color">
+  	  			<h2>Цвет</h2>
+  	  			<div class="knitting-order-form__color-item">
+  	  				<input id="white" type="checkbox" checked>
+  				  	<label for="white">Белый</label>
+  	  			</div>
+  	  			<div class="knitting-order-form__color-item">
+  	  				<input id="grey" type="checkbox" checked>
+  				  	<label for="grey">Серый</label>
+  	  			</div>
+  	  			<div class="knitting-order-form__color-item">
+  	  				<input id="tiffany" type="checkbox">
+  				  	<label for="tiffany">"Тиффани"</label>
+  	  			</div>
+  	  			<div class="knitting-order-form__color-item">
+  	  				<input id="black" type="checkbox">
+  				  	<label for="black">Черный</label>
+  	  			</div>
+  	  			<div class="knitting-order-form__color-item">
+  	  				<input id="pink" type="checkbox">
+  				  	<label for="pink">Розовый</label>
+  	  			</div>
+  	  			<div class="knitting-order-form__color-item">
+  	  				<input id="orange" type="checkbox">
+  				  	<label for="orange">Оранжевый</label>
+  	  			</div>
+  	  		</div>
+  	  		<div class="knitting-order-form__name">
+  	  			<h2>ФИО</h2>
+  	  			<label for="name">Имя:</label>
+  	  			<input id="name" type="text" placeholder="Введите ваше имя">
+  	  			<label for="last-name">Фамилия:</label>
+  	  			<input id="last-name" type="text" placeholder="Укажите фамилию">
+  	  			<label for="middle-name">Отчество:</label>
+  	  			<input id="middle-name" type="text" placeholder="Отчество, если желаете">
+  	  		</div>
+  	  		<div class="knitting-order-form__phone">
+  	  			<label for="phone">Тел</h2>
+  	  			<input id="phone" type="text" placeholder="+7 XXX XX XX">
+  	  		</div>
+  	  		<div class="knitting-order-form__e-mail">
+  	  			<label for="e-mail">E-mail</label>
+  	  			<input id="e-mail" type="text" placeholder="Ваш e-mail">
+  	  		</div>
+  	  		<div class="knitting-order-form__more">
+  	  			<label for="more">Доп</h2>
+            <textarea id="more" name="name" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+  	  		</div>
+  	  		<div class="knitting-order-form__order">
+  	  			<span>
+  	  				Все поля обязательны для заполнения
+  	  			</span>
+  	  			<button class="knitting-order-form__order-btn" type="submit">Отправить заказ</button>
+  	  		</div>
+        </div>
 	  	</form>
 	  </main>
 	  <footer class="page-footer">
+      <div class="page-footer__wrapper">
 	  		<div class="page-footer__social">
 	        <ul>
 	          <li>
@@ -118,6 +125,7 @@
 	          <img src="img/logo-htmlacademy.svg" alt="HTML-Academy">
 	        </a>
 	  		</div>
-	  	</footer>
+      </div>
+	  </footer>
 	</body>
 </html>

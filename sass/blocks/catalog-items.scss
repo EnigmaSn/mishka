@@ -1,20 +1,19 @@
 .catalog-items {
-  padding-left: 30px;
-  padding-right: 30px;
   background-color: $body-bg;
+  width: 100%;
+}
+
+.catalog-items__wrapper {
   @include container;
 }
 
 .catalog-items__item {
 
     h1 {
-      padding-left: 30px;
-      padding-right: 30px;
       font-size: 17px;
       line-height: 24px;
     }
     span {
-      padding-left: 30px;
       display: block;
     }
 }

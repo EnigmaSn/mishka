@@ -1,7 +1,7 @@
 .production-process {
   background-color: $body-bg;
   padding-bottom: 30px;
-  @include container;
+  width: 100%;
 
     h2 {
       font-size: 17px;
@@ -13,11 +13,14 @@
     p {
       font-size: 13px;
       line-height: 24px;
-      padding-left: 30px;
-      padding-right: 30px;
+
       padding-top: 30px;
       padding-bottom: 30px;
     }
+}
+
+.production-process__wrapper {
+  @include container;
 }
 
 .production-process__order-btn {

@@ -1,8 +1,6 @@
 .knitting-order-form {
-  padding-left: 30px;
-  padding-right: 30px;
   background-color: $body-bg;
-  @include container;
+  width: 100%;
 
     h2 {
       color: $light-green;
@@ -13,6 +11,10 @@
       font-size: 17px;
       line-height: 18px;
     }
+}
+
+.knitting-order-form__wrapper {
+  @include container;
 }
 
 .knitting-order-form__type {

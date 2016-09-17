@@ -1,10 +1,14 @@
 .review {
-  @include container;
+  width: 100%;
 
     p {
       font-size: 15px;
       line-height: 30px;
     }
+}
+
+.review__wrapper {
+  @include container;
 }
 
 .review__author {

@@ -1,8 +1,6 @@
 .weekly-product {
   background-color: $body-bg;
-  padding-left: 30px;
-  padding-right: 30px;
-  @include container;
+  width: 100%;
 
     h2 {
       font-size: 25px;
@@ -12,6 +10,10 @@
       font-size: 15px;
       line-height: 24px;
     }
+}
+
+.weekly-product__wrapper {
+  @include container;
 }
 
 .weekly-product__title {

@@ -1,8 +1,6 @@
 .about-us {
   background-color: $body-bg;
-  padding-left: 30px;
-  padding-right: 30px;
-  @include container;
+  width: 100%;
 
     h2 {
       font-size: 25px;
@@ -13,7 +11,10 @@
     }
     li {
       font-size: 17px;
-      // line-height: не проставлен в макете
       list-style-type: none;
     }
+}
+
+.about-us__wrapper {
+  @include container;
 }
