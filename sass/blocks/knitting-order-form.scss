@@ -15,9 +15,25 @@
 
 .knitting-order-form__wrapper {
   @include container;
+  background-color: #555;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .knitting-order-form__type {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.knitting-order-form__btn-type {
+  flex-direction: column;
+  flex-wrap: wrap;
+    label {
+      display: block;
+      width: 100%;
+    }
 }
 
 .knitting-order-form__name {
@@ -80,4 +96,16 @@
   border: 2px solid $black;
   display: block;
   width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media #{$tablet-widths} {
+  .knitting-order-form__type {
+    flex-direction: row;
+  }
+}
+
+@media #{$desktop-widths} {
+
 }

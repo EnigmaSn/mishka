@@ -2,18 +2,47 @@
   background-color: $body-bg;
   width: 100%;
 
-    h1 {
-      background-color: $gray-bg;
-      font-size: 27px;
-      line-height: 30px;
-      text-align: center;
-    }
     p {
       font-size: 13px;
       line-height: 24px;
+      @include side-margin;
     }
 }
 
+.knitting-order__title {
+  h1 {
+    background-color: $gray-bg;
+    font-size: 27px;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 .knitting-order__wrapper {
   @include container;
+}
+
+@media #{$tablet-widths} {
+  .knitting-order {
+    p {
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+  .knitting-order__title {
+    h1 {
+      font-size: 43px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .knitting-order__title {
+    h1 {
+      font-size: 53px;
+      line-height: 57px;
+    }
+  }
 }
