@@ -5,8 +5,14 @@
 
 .page-footer__wrapper {
   @include container;
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
 }
 
+.page-footer__logo {
+  display: none;
+}
 .page-footer__social {
 
     li {
@@ -24,4 +30,13 @@
       font-size: 19px;
       font-weight: bold;
     }
+}
+
+@media #{$tablet-widths} {
+  .page-footer__logo {
+    display: flex;
+  }
+  .page-footer__wrapper {
+    flex-direction: row;
+  }
 }

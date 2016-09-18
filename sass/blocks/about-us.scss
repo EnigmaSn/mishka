@@ -1,14 +1,15 @@
 .about-us {
   background-color: $body-bg;
   width: 100%;
-  @include side-padding;
 
     h2 {
       font-size: 25px;
       line-height: 30px;
+      @include side-margin;
     }
     ul {
       padding-left: 0;
+      @include side-margin;
     }
     li {
       font-size: 17px;
@@ -18,6 +19,7 @@
 
 .about-us__wrapper {
   @include container;
+  background-color: #fafafa;
 }
 
 @media #{$tablet-widths} {
@@ -34,10 +36,14 @@
 // не перестраиваются в две колонки
 @media #{$desktop-widths} {
   .about-us {
-    padding-left: 225px;
-  	padding-right: 225px;
-  }
-  .about-us li {
-    width: 350px;
+    h2 {
+      padding-left: 175px;
+    }
+    ul {
+      padding-left: 175px
+    }
+    li {
+      width: 350px;
+    }
   }
 }

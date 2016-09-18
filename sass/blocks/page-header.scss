@@ -9,6 +9,7 @@
 
 .page-header__wrapper {
   @include container;
+  position: relative;
 }
 
 .page-header__menu--close {
@@ -85,6 +86,11 @@
   .page-header__menu_form {
     order: 4;
   }
+  .page-header__logo {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+  }
  }
 
  @media #{$desktop-widths} {
@@ -109,6 +115,10 @@
    .page-header__new {
      display: inline;
      font-weight: bold;
-
+   }
+   .page-header__logo {
+     position: absolute;
+     left: 40%;
+     top: 20px;
    }
  }

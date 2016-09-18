@@ -4,6 +4,7 @@
     p {
       font-size: 15px;
       line-height: 30px;
+      @include side-margin
     }
 }
 
@@ -14,10 +15,18 @@
 .review__author {
   font-size: 18px;
   font-weight: bold;
+  @include side-margin
 }
 
 .review__author-contact {
   font-size: 18px;
+  display: block;
+  @include side-margin
+}
+
+.reviews__nav {
+  @include side-margin
+  display: inline;
 }
 
 .reviews__add-btn {
@@ -27,4 +36,31 @@
   text-decoration: none;
   border: 2px solid $black;
   display: block;
+  @include side-margin
+}
+
+@media #{$tablet-widths} {
+  .review {
+
+      p {
+        font-size: 17px;
+        line-height: 30px;
+      }
+  }
+}
+
+@media #{$desktop-widths} {
+  .review {
+      h2 {
+        padding-left: 175px;
+      }
+      p {
+        padding-left: 175px;
+    }
+  }
+  .reviews__item {
+      span {
+        padding-left: 175px;
+      }
+  }
 }

@@ -1,10 +1,11 @@
 .contacts {
   background-color: $body-bg;
   width: 100%;
-  @include side-padding;
+
     h2 {
       font-size: 18px;
       line-height: 30px;
+      @include side-margin;
     }
     img {
       padding-left: 0;
@@ -13,14 +14,20 @@
 
 .contacts__wrapper {
   @include container;
+  background-color: #666666;
+  position: relative;
 }
 
 .contacts__e-mail {
-  padding-right: 30px;
-
+  padding-right: 25px;
   font-size: 15px;
   line-height: 30px;
+  display: flex;
 
+    span {
+      @include side-margin;
+      margin-right: 0;
+    }
     a {
       color: $black;
       margin-left: 20px;
@@ -28,11 +35,17 @@
 }
 
 .contacts__adress {
-  padding-right: 30px;
-
+  padding-right: 25px;
   font-size: 15px;
   line-height: 30px;
+  display: flex;
 
+    span {
+      // @include side-padding;
+      // padding-left: 30px;
+      @include side-margin;
+      margin-right: 0;
+    }
     a {
       color: $black;
       text-decoration: none;
@@ -50,11 +63,44 @@
 }
 
 @media #{$tablet-widths} {
-
+  .contacts__info {
+    display: flex;
+    flex-direction: row;
+  }
+  .contacts__e-mail {
+    font-size: 17px;
+    line-height: 30px;
+    // min-width: 334px;
+  }
+  .contacts__adress {
+    font-size: 17px;
+    line-height: 30px;
+    // min-width: 334px;
+  }
+  .contacts__contact-us-btn {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media #{$desktop-widths} {
   .contacts {
-    padding-left: 225px;
+      h2 {
+        padding-left: 175px;
+      }
+  }
+  .contacts__info {
+    width: 350px;
+    padding-left: 175px;
+    flex-direction: column;
+  }
+  .contacts img {
+    position: absolute;
+    right:0;
+    top: 50px;
+  }
+  .contacts__contact-us-btn {
+    margin-bottom: 250px;
   }
 }

@@ -6,6 +6,7 @@
       font-size: 25px;
       line-height: 30px;
       @include side-margin;
+      z-index: 5;
     }
     p {
       font-size: 15px;
@@ -16,6 +17,8 @@
 
 .weekly-product__wrapper {
   @include container;
+  position: relative;
+  background-color: gray;
 }
 
 .weekly-product__title {
@@ -58,11 +61,24 @@
   border: 2px solid $black;
   display: block;
   @include btn-padding;
+  @include side-margin;
 }
 
-// Доделать
-
 @media #{$tablet-widths} {
+  .weekly-product {
+      h2 {
+        font-size: 43px;
+        line-height: 50px;
+      }
+      p {
+        font-size: 17px;
+        line-height: 30px;
+      }
+  }
+  .weekly-product__price {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .weekly-product__titles {
     display: flex;
     flex-direction: row;
@@ -70,10 +86,29 @@
   }
   .weekly-product__item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 334px;
   }
 
   .weekly-product__photo {
-    order: 1;
+    position: absolute;
+    right: 130px;
+    margin: 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .weekly-product {
+      h2 {
+        font-size: 53px;
+        line-height: 57px;
+      }
+  }
+  .weekly-product__titles {
+    flex-direction: row-reverse;
+  }
+  .weekly-product__item {
+    padding-left: 175px;
   }
 }

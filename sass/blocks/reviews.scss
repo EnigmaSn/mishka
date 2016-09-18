@@ -1,31 +1,47 @@
 .reviews {
   background-color: $body-bg;
   width: 100%;
-  @include side-margin;
 
     h2 {
       font-size: 25px;
       line-height: 30px;
+      @include side-margin;
     }
 }
 
 .reviews__wrapper {
   @include container;
-
+  background-color: gray;
+  position: relative;
 }
+
+.reviews__add-btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+// Доделать
+
+// абзац, кнопка и стрелки - абсолюты?
 
 @media #{$tablet-widths} {
   .reviews__wrapper {
     display: flex;
+    flex-direction: column;
   }
-  .reviews__item {
-    width: 640px;
+  .reviews__nav {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .reviews__add-btn {
+    width: 175px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
   }
 }
 
 @media #{$desktop-widths} {
-  .reviews {
-    margin-left: 225px;
-    margin-right: 225px;
-  }
+
 }

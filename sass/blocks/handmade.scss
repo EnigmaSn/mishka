@@ -17,7 +17,7 @@
     }
 }
 
-.handmade-wrapper {
+.handmade__wrapper {
   @include container;
 }
 
@@ -30,8 +30,12 @@
   min-width: 320px;
 
     h2 {
+      font-size: 19px;
+      line-height: 24px;
       margin: 0;
-      padding: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 36px;
       width: 100%;
     }
     a {
@@ -47,17 +51,41 @@
 }
 
 @media #{$tablet-widths} {
+  .handmade {
+      h1 {
+        font-size: 43px;
+        line-height: 50px;
+      }
+  }
   .handmade__stuffs {
     flex-direction: row;
     width: 100%;
   }
 
   .handmade__stuff {
-    min-width: 334px;
+    width: 334px;
+
+      h2 {
+      font-size: 20px;
+      line-height: 30px;
+      }
+      &--light-green {
+        margin-left: 50px;
+      }
+      &--dark-green {
+        margin-right: 50px;
+      }
   }
 }
 
 @media #{$desktop-widths} {
+
+  .handmade {
+      h1 {
+        font-size: 53px;
+        line-height: 57px;
+      }
+  }
   .handmade__stuff {
     min-width: 525px;
   }
