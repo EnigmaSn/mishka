@@ -17,35 +17,51 @@
     		<a class="page-header__menu--close" href="#"></a>
         <div class="page-header__menu--open">
           <ul>
-            <li><a href="#">Каталог товаров</a></li>
-            <li><a href="form.html">Вязание на заказ</a></li>
-            <li><a href="#">Поиск по сайту</a></li>
-            <li><a href="#">Корзина<span>:пока пуста</span></a></li>
+            <li class="page-header__menu_catalog"><a href="#">Каталог товаров</a></li>
+            <li class="page-header__menu_form"><a href="form.html">Вязание на заказ</a></li>
+            <li class="page-header__menu_search"><a href="#">Поиск по сайту</a></li>
+            <li class="page-header__menu_cart"><a href="#">Корзина<span>:пока пуста</span></a></li>
           </ul>
         </div>
       </div>
   	</header>
 		<main>
 			<section class="catalog-items">
+				<div class="catalog-items__title">
+					<div class="catalog-items__title-wrapper">
+						<h1>Каталог товаров</h1>
+					</div>
+				</div>
         <div class="catalog-items__wrapper">
-          <h1>Каталог товаров</h1>
   				<article class="catalog-items__item">
-  					<img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
-  					<h1>Зайчик-попрыгайчик</h1>
-  					<span class="catalog-items__item--characteristics">Рост 30 см, вес 200 г</span>
-  					<span class="catalog-items__item--price">1 200 руб.</span>
+						<div class="catalog-items__photo">
+  						<img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" width="260" height="195">
+						</div>
+						<div class="catalog-items__info">
+							<h1>Зайчик-попрыгайчик</h1>
+	  					<span class="catalog-items__item--characteristics">Рост 30 см, вес 200 г</span>
+	  					<span class="catalog-items__item--price">1 200 руб.</span>
+						</div>
   				</article>
   				<article class="catalog-items__item">
-  					<img src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
-  					<h1>Корзинка для белья</h1>
-  					<span class="catalog-items__item--characteristics">Диаметр 15 см, высота 10 см</span>
-  					<span class="catalog-items__item--price">690 руб.</span>
+  					<div class="catalog-items__photo">
+							<img src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" width="260" height="195">
+						</div>
+  					<div class="catalog-items__info">
+							<h1>Корзинка для белья</h1>
+  						<span class="catalog-items__item--characteristics">Диаметр 15 см, высота 10 см</span>
+  						<span class="catalog-items__item--price">690 руб.</span>
+						</div>
   				</article>
   				<article class="catalog-items__item">
-  					<img src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
-  					<h1>Большая корзинка для игрушек</h1>
-  					<span class="catalog-items__item--characteristics">Диаметр 30 см, высота 30 см</span>
-  					<span class="catalog-items__item--price">1 500 руб.</span>
+  					<div class="catalog-items__photo">
+							<img src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек" width="260" height="195">
+						</div>
+						<div class="catalog-items__info">
+	  					<h1>Большая корзинка для игрушек</h1>
+	  					<span class="catalog-items__item--characteristics">Диаметр 30 см, высота 30 см</span>
+	  					<span class="catalog-items__item--price">1 500 руб.</span>
+						</div>
           </div>
 				</article>
 			</section>
@@ -62,6 +78,9 @@
 		</main>
 		<footer class="page-footer">
       <div class="page-footer__wrapper">
+				<div class="page-footer__logo">
+	        <img src="#" alt="logo" width="" height="">
+	      </div>
   	  	<div class="page-footer__social">
   	      <ul>
   	        <li>

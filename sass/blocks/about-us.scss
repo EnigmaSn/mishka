@@ -19,7 +19,6 @@
 
 .about-us__wrapper {
   @include container;
-  background-color: #fafafa;
 }
 
 @media #{$tablet-widths} {
