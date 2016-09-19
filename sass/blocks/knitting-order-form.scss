@@ -15,59 +15,82 @@
 
 .knitting-order-form__wrapper {
   @include container;
-  background-color: #555;
   display: flex;
   flex-direction: column;
-
 }
 
 .knitting-order-form__type {
   display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 .knitting-order-form__btn-type {
+
+    label {
+      display: block;
+    }
+}
+
+// Цвет
+
+.knitting-order-form__color {
+  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+}
+
+.knitting-order-form__title-color {
+}
+
+.knitting-order-form__color-items {
+
+}
+.knitting-order-form__color-item {
+  display: block;
+  align-self: baseline;
+}
+
+// имя
+
+.knitting-order-form__name {
+  display: flex;
     label {
       display: block;
       width: 100%;
     }
 }
 
-.knitting-order-form__name {
-    label {
-      display:block;
-    }
-}
+// телефон
 
 .knitting-order-form__phone {
+  display: flex;
+  flex-direction: column;
     label {
       color: $light-green;
       font-size: 17px;
       font-weight: bold;
-      width: 100%;
+      // width: 100%;
     }
     input {
-      width: 100%;
+      // width: 100%;
     }
 }
 
 .knitting-order-form__e-mail {
+  display: flex;
+  flex-direction: column;
     label {
       color: $light-green;
       font-size: 17px;
       font-weight: bold;
-      width: 100%;
+      // width: 100%;
     }
     input {
-      width: 100%;
+      // width: 100%;
     }
 
 }
 
 .knitting-order-form__more {
+  display: flex;
     label {
       color: $light-green;
       font-size: 17px;
@@ -81,6 +104,7 @@
 }
 
 .knitting-order-form__order {
+  display: flex;
 
     span {
       font-size: 14px;
@@ -101,11 +125,52 @@
 }
 
 @media #{$tablet-widths} {
-  .knitting-order-form__type {
+  .knitting-order-form__wrapper {
     flex-direction: row;
   }
+
+  .knitting-order-form__type {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .knitting-order-form__title {
+    width: 167px;
+    text-align: center;
+  }
+
+  .knitting-order-form__color {
+    flex-direction: row;
+    align-items: baseline;
+    background-color: #f1f1f1;
+  }
+
+  .knitting-order-form__color-item {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 262px;
+    min-width: 262px;
+    max-width: 262px;
+  }
+
+  .knitting-order-form__name {
+    flex-direction: column;
+  }
+
+  .knitting-order-form__phone {
+    background-color: #f1f1f1;
+  }
+
+  .knitting-order-form__e-mail {
+    background-color: #f1f1f1;
+  }
+  .knitting-order-form__order-button {
+    order: -1;
+  }
+
 }
 
 @media #{$desktop-widths} {
-
+  .knitting-order-form__title {
+    width: 175px;
+  }
 }
