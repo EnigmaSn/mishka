@@ -67,9 +67,17 @@
 // доделать
 @media #{$desktop-widths} {
   .production-process__wrapper {
-    width: 368px;
       video {
       position: absolute;
     }
+      h2 {
+        margin-left: 762px;
+      }
+      p {
+        margin-left: 762px;
+      }
+      a {
+        margin-left: 762px;
+      }
   }
 }
