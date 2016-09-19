@@ -10,6 +10,15 @@
 	  }
 }
 
+// @mixin modal-container() {
+// 	width: 320px;
+// 	margin: 0 auto;
+//
+// 	  @media #{$tablet-widths} {
+// 	   width: 566px;
+// 	  }
+// }
+
 @mixin side-padding {
 	padding-left: 30px;
 	padding-right: 30px;
