@@ -6,6 +6,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
+  min-height: 480px;
 
     h1 {
       font-size: 27px;
@@ -13,12 +14,15 @@
       text-align: center;
       margin: 0;
       padding-top: 60px;
-      padding-bottom: 230px;
+      // padding-bottom: 230px;
     }
 }
 
 .handmade__wrapper {
   @include container;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .handmade__stuffs {
@@ -52,6 +56,7 @@
 
 @media #{$tablet-widths} {
   .handmade {
+    min-height: 746px;
       h1 {
         font-size: 43px;
         line-height: 50px;

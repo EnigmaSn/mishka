@@ -5,5 +5,10 @@ $light-green: #63d1bb;
 $dark-green: #56c3b2;
 $gray-bg: #f1f1f1;
 
+// $mobile-widths-only: ~"(max-width: 767px)";
 $tablet-widths: "(min-width: 768px)";
+// $tablet-widths-only: ~"(max-width: 1149px)";
 $desktop-widths: "(min-width: 1150px)";
+
+// юзать вот так:
+// @media #{$mobile-widths-only};
