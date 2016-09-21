@@ -90,12 +90,18 @@
   }
 
   .page-header__menu_search {
-    flex-basis: 80px;
+    min-width: 83px;
+    flex-basis: 83px;
+    border-left: 1px solid #ececec;
+      a {
+        font-size: 0;
+      }
   }
   .page-header__menu_cart {
     display:flex;
     flex-basis: 315px;
     align-items: center;
+    border-left: 1px solid #ececec;
   }
   .page-header__menu_catalog {
     position: absolute;
