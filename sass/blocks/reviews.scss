@@ -11,12 +11,20 @@
 
 .reviews__wrapper {
   @include container;
+  // background-color: #f4f4f4;
   position: relative;
 }
 
 .reviews__add-btn {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.reviews__nav {
+  border: 1px solid #ececec;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 // Доделать
 
