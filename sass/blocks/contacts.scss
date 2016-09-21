@@ -6,9 +6,13 @@
       font-size: 18px;
       line-height: 30px;
       @include side-margin;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
     img {
       padding-left: 0;
+      margin-top: 40px;
+      margin-bottom: 40px;
     }
 }
 
@@ -24,7 +28,8 @@
   display: flex;
 
     span {
-      @include side-margin;
+      // @include side-margin;
+      margin-left: 30px;
       margin-right: 0;
     }
     a {
@@ -40,9 +45,8 @@
   display: flex;
 
     span {
-      // @include side-padding;
-      // padding-left: 30px;
-      @include side-margin;
+      margin-left: 30px;
+      // @include side-margin;
       margin-right: 0;
     }
     a {
@@ -64,19 +68,28 @@
 }
 
 @media #{$tablet-widths} {
+  .contacts {
+      h2 {
+        margin-top: 80px;
+        margin-top: 80px;
+      }
+      img {
+        margin-top: 55px;
+        margin-bottom: 55px;
+      }
+  }
   .contacts__info {
     display: flex;
     flex-direction: row;
+    margin-left: 20px;
   }
   .contacts__e-mail {
     font-size: 17px;
     line-height: 30px;
-    // min-width: 334px;
   }
   .contacts__adress {
     font-size: 17px;
     line-height: 30px;
-    // min-width: 334px;
   }
   .contacts__contact-us-btn {
     width: 230px;
@@ -99,9 +112,12 @@
   .contacts img {
     position: absolute;
     right:0;
-    top: 50px;
+    top: 0px;
   }
   .contacts__contact-us-btn {
+    margin: 0;
+    margin-top: 50px;
     margin-bottom: 250px;
+    margin-left: 225px;
   }
 }

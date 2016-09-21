@@ -5,6 +5,7 @@
     h2 {
       font-size: 25px;
       line-height: 30px;
+      margin-bottom: 40px;
       @include side-margin;
     }
 }
@@ -18,17 +19,15 @@
 .reviews__add-btn {
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-top: 30px;
 }
 
 .reviews__nav {
   border: 1px solid #ececec;
   padding: 10px;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom: 80px;
 }
-// Доделать
-
-// абзац, кнопка и стрелки - абсолюты?
 
 @media #{$tablet-widths} {
   .reviews__wrapper {
@@ -37,14 +36,14 @@
   }
   .reviews__nav {
     position: absolute;
-    bottom: 30px;
+    bottom: -40px;
     right: 30px;
   }
 
   .reviews__add-btn {
     width: 175px;
     position: absolute;
-    top: 30px;
+    top: 0px;
     right: 30px;
   }
 }
