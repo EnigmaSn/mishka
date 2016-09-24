@@ -2,29 +2,36 @@
   background-color: $body-bg;
   padding-bottom: 30px;
   width: 100%;
+}
 
+.production-process__wrapper {
+  @include container;
+  position: relative;
+}
+
+.production-process__video {
+  border: 1px solid #ececec;
+  @include side-margin;
+    iframe {
+      width: 258px;
+      height: 150px;
+      margin: 0;
+    }
     h2 {
       font-size: 17px;
       line-height: 24px;
       padding-left: 90px;
       padding-top: 30px;
       padding-bottom: 30px;
-      @include side-margin;
     }
     p {
       font-size: 13px;
       line-height: 24px;
-
       padding-top: 30px;
       padding-bottom: 30px;
-      @include side-margin;
+      margin-left: 30px;
+      margin-right: 30px;
     }
-}
-
-.production-process__wrapper {
-  @include container;
-  position: relative;
-  background-color: #f2f2f2;
 }
 
 .production-process__order-btn {
@@ -36,40 +43,51 @@
   display: block;
   margin-left: 30px;
   margin-right: 30px;
+  margin-bottom: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+
 }
 
 @media #{$tablet-widths} {
   .production-process__wrapper {
     display: flex;
     flex-direction: column;
-      video {
-      order: -1;
-    }
   }
-  h2 {
-    font-size: 24px;
-    line-height: 24px;
-    margin-left: 42px;
-  }
-  p {
-    font-size: 15px;
-    line-height: 30px;
-    margin-left: 42px;
-  }
-  .production-process__order-btn {
-    margin-left: 42px;
-    margin-right: 42px;
+  .production-process__video {
+    display: flex;
+    flex-direction: column;
+      iframe {
+        width: 666px;
+        height: 455px;
+
+        // не перемещается вперед
+        order: -1;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 24px;
+        margin-left: 42px;
+      }
+      p {
+        font-size: 15px;
+        line-height: 30px;
+        margin-left: 42px;
+      }
+      .production-process__order-btn {
+        margin-left: 42px;
+        margin-right: 42px;
+      }
   }
 }
 
-// доделать
 @media #{$desktop-widths} {
-  .production-process__wrapper {
-      video {
+  .production-process__video {
+      iframe {
       position: absolute;
-    }
+      top: 0;
+      width: 682px;
+      }
       h2 {
         margin-left: 762px;
       }
@@ -79,5 +97,11 @@
       a {
         margin-left: 762px;
       }
+  }
+  .production-process__order-btn {
+    margin: 0;
+    margin-left: 762px;
+    width: 230px;;
+    margin-bottom: 60px;
   }
 }
