@@ -1,6 +1,7 @@
 .knitting-order-form {
   background-color: $body-bg;
   width: 100%;
+  // @include side-margin;
 
     h2 {
       color: $light-green;
@@ -17,14 +18,18 @@
   @include container;
   display: flex;
   flex-direction: column;
+  // background-color: #333;
 }
 
+.knitting-order-form__title {
+  @include side-margin;
+}
 .knitting-order-form__type {
   display: flex;
 }
 
 .knitting-order-form__btn-type {
-
+  @include side-margin;
     label {
       display: block;
     }
@@ -36,16 +41,13 @@
   display: flex;
   flex-direction: column;
 }
-
-.knitting-order-form__title-color {
-}
-
 .knitting-order-form__color-items {
-
+  @include side-margin;
 }
 .knitting-order-form__color-item {
   display: block;
   align-self: baseline;
+
 }
 
 // имя
@@ -58,6 +60,9 @@
     }
 }
 
+.knitting-order-form__name-btn {
+  @include side-margin;
+}
 // телефон
 
 .knitting-order-form__phone {
@@ -74,6 +79,9 @@
     }
 }
 
+.knitting-order-form__phone-btn {
+  @include side-margin;
+}
 .knitting-order-form__e-mail {
   display: flex;
   flex-direction: column;
@@ -84,6 +92,7 @@
       // width: 100%;
     }
     input {
+      @include side-margin;
       // width: 100%;
     }
 
@@ -100,6 +109,7 @@
     textarea {
       font-size: 17px;
       width: 100%;
+      @include side-margin;
     }
 }
 
@@ -108,6 +118,7 @@
 
     span {
       font-size: 14px;
+      @include side-margin;
     }
 }
 
@@ -122,28 +133,37 @@
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+  @include side-margin;
 }
 
 @media #{$tablet-widths} {
   .knitting-order-form__wrapper {
     flex-direction: row;
   }
-
   .knitting-order-form__type {
     flex-direction: row;
     align-items: baseline;
   }
-  .knitting-order-form__title {
-    width: 167px;
-    text-align: center;
+  .knitting-order-form__btn-type {
+    margin-left: 0;
   }
-
+  .knitting-order-form__title {
+    min-width: 167px;
+    margin-right: 0;
+  }
   .knitting-order-form__color {
     flex-direction: row;
     align-items: baseline;
     background-color: #f1f1f1;
   }
-
+  .knitting-order-form__color-items {
+    display: flex;
+    flex-direction: row;
+    min-width: 700px;
+    max-width: 700px;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
   .knitting-order-form__color-item {
     flex-direction: row;
     flex-wrap: wrap;
@@ -151,17 +171,28 @@
     min-width: 262px;
     max-width: 262px;
   }
-
   .knitting-order-form__name {
     flex-direction: column;
   }
-
+  .knitting-order-form__name-btn {
+    margin-left: 0;
+  }
   .knitting-order-form__phone {
     background-color: #f1f1f1;
   }
-
+  .knitting-order-form__phone-btn {
+    margin-left: 0;
+  }
   .knitting-order-form__e-mail {
     background-color: #f1f1f1;
+      input {
+        margin-left: 0;
+      }
+  }
+  .knitting-order-form__more-btn {
+    textarea {
+      margin-left: 0;
+    }
   }
   .knitting-order-form__order-button {
     order: -1;
