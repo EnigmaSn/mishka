@@ -18,7 +18,6 @@
   @include container;
   display: flex;
   flex-direction: column;
-  background-color: #333;
 }
 
 .knitting-order-form__title {
@@ -36,7 +35,6 @@
 }
 
 // Цвет
-
 .knitting-order-form__color {
   display: flex;
   flex-direction: column;
@@ -61,7 +59,11 @@
 .knitting-order-form__name-btn {
   @include side-margin;
     input {
-      width: 257px;
+      min-width: 257px;
+      max-width: 257px;
+      height: 50px;
+      border: 0;
+      border-bottom: 2px solid black;
     }
 }
 
@@ -76,7 +78,10 @@
     }
     input {
       @include side-margin;
-      width: 257px;
+      min-width: 257px;
+      max-width: 257px;
+      border: 0;
+      border-bottom: 2px solid black;
     }
 }
 
@@ -90,7 +95,10 @@
     }
     input {
       @include side-margin;
-      width: 257px;
+      min-width: 257px;
+      max-width: 257px;
+      border: 0;
+      border-bottom: 2px solid black;
     }
 }
 
@@ -104,9 +112,10 @@
     }
     textarea {
       font-size: 17px;
-      min-width: 260px;
-      max-width: 260px;
+      min-width: 257px;
+      max-width: 257px;
       @include side-margin;
+      border: 2px solid black;
     }
 }
 
@@ -180,12 +189,14 @@
   .knitting-order-form__phone-btn {
     input {
       margin-left: 0;
+      background-color: #f1f1f1;
     }
   }
   .knitting-order-form__e-mail {
     background-color: #f1f1f1;
       input {
         margin-left: 0;
+        background-color: #f1f1f1;
       }
   }
   .knitting-order-form__more-btn {
