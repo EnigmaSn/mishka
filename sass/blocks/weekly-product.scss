@@ -20,7 +20,6 @@
 .weekly-product__wrapper {
   @include container;
   position: relative;
-  background-color: #f2f2f2;
 }
 
 .weekly-product__title {
@@ -134,5 +133,12 @@ br {
   }
   .weekly-product__item {
     padding-left: 175px;
+  }
+  .weekly-product__price {
+    margin-top: 150px;
+  }
+
+  .weekly-product__photo {
+    top: 70px;
   }
 }

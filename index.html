@@ -72,9 +72,11 @@
               <td>15 см</td>
             </tr>
           </table>
-          <figure class="weekly-product__photo">
-            <img src="img/triple-set-mobile@1x.jpg" alt="product-photo" width="260px" height="315">
-          </figure>
+          <picture class="weekly-product__photo">
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="product-photo">
+          </picture>
           <span class="weekly-product__price">
     			    Цена: 990 руб.
     			  </span>
@@ -155,7 +157,11 @@
             </a>
           </div>
         </div>
-        <img src="img/map-mobile@1x.jpg" alt="map" width="320" height="457">
+        <picture class="contacts__map">
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+          <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="map">
+        </picture>
         <a class="contacts__contact-us-btn" href="#">Напишите нам</a>
       </div>
     </section>

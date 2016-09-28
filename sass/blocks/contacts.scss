@@ -9,11 +9,6 @@
       margin-top: 40px;
       margin-bottom: 40px;
     }
-    img {
-      padding-left: 0;
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
 }
 
 .contacts__wrapper {
@@ -55,7 +50,14 @@
       margin-left: 20px;
     }
 }
-
+.contacts__map {
+  img {
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
 .contacts__contact-us-btn {
   color: $black;
   font-size: 18px;

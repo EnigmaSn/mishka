@@ -2,6 +2,7 @@
   background-color: $body-bg;
   width: 100%;
 
+
     h2 {
       font-size: 25px;
       line-height: 30px;
@@ -12,7 +13,6 @@
 
 .reviews__wrapper {
   @include container;
-  // background-color: #f4f4f4;
   position: relative;
 }
 
@@ -33,6 +33,13 @@
   .reviews__wrapper {
     display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-image: url("../../img/review@1x.jpg");
+    @media
+    (min-resolution: 1.5dppx),
+    (min-resolution:144dpi) {
+        background-image: url("../../img/review@2x.jpg");
+      }
   }
   .reviews__nav {
     position: absolute;

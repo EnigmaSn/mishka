@@ -21,7 +21,6 @@
 
 .about-us__wrapper {
   @include container;
-  background-color: #f4f4f4;
 }
 
 @media #{$tablet-widths} {
