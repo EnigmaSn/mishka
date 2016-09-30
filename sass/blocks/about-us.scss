@@ -15,7 +15,11 @@
     li {
       font-size: 17px;
       list-style-type: none;
-      padding-top: 90px;
+      padding-top: 60px;
+    }
+    svg {
+      fill: $light-green;
+      display: block;
     }
 }
 
