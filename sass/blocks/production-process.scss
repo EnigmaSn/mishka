@@ -12,6 +12,7 @@
 .production-process__video {
   border: 1px solid #ececec;
   @include side-margin;
+  position: relative;
     iframe {
       width: 258px;
       height: 150px;
@@ -31,6 +32,11 @@
       padding-bottom: 30px;
       margin-left: 30px;
       margin-right: 30px;
+    }
+    svg {
+      position: absolute;
+      top: 50px;
+      left: 30px;
     }
 }
 
@@ -74,6 +80,11 @@
         line-height: 30px;
         margin-left: 42px;
       }
+      svg {
+        position: absolute;
+        top: 505px;
+        left: 30px;
+      }
       .production-process__order-btn {
         margin-left: 42px;
         margin-right: 42px;
@@ -99,6 +110,11 @@
       }
       a {
         margin: 0;
+      }
+      svg {
+        position: absolute;
+        top: 45px;
+        left: 755px;
       }
   }
   .production-process__order-btn {
