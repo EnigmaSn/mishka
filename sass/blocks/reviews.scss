@@ -1,14 +1,6 @@
 .reviews {
   background-color: $body-bg;
   width: 100%;
-
-
-    h2 {
-      font-size: 25px;
-      line-height: 30px;
-      margin-bottom: 40px;
-      @include side-margin;
-    }
 }
 
 .reviews__wrapper {
@@ -26,7 +18,7 @@
   background-repeat: no-repeat;
   background-size: 100% 7px;
   position: absolute;
-  bottom: -35px;
+  bottom: -50px;
   left: 0;
 }
 

@@ -1,6 +1,7 @@
 .about-us {
   background-color: $body-bg;
   width: 100%;
+  margin-bottom: 30px;
 
     h2 {
       font-size: 25px;
@@ -24,13 +25,13 @@
       justify-content: space-between;
       margin-bottom: 25px;
     }
-  
+
       span {
         margin: 0;
       }
       svg {
       fill: $light-green;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
       }
 }
 
