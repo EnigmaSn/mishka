@@ -7,9 +7,13 @@
     h1 {
       font-size: 27px;
       line-height: 30px;
+      font-weight: bold;
       text-align: center;
       margin: 0;
-      padding-top: 60px;
+      margin-top: 93px;
+      margin-left: 38px;
+      margin-right: 38px;
+      margin-bottom: 122px;
     }
 }
 
@@ -41,10 +45,11 @@
       font-size: 19px;
       line-height: 24px;
       margin: 0;
-      padding-top: 30px;
+      padding-top: 25px;
       padding-bottom: 30px;
-      padding-left: 36px;
-      width: 100%;
+      padding-left: 30px;
+      // width: 100%;
+      width: 130px;
     }
     a {
       color: $white;
@@ -52,17 +57,25 @@
     }
     &--light-green {
       background: $light-green;
+      position: relative;
         svg {
+          display: inline;
           fill: #149080;
           opacity: 0.5;
+          position: absolute;
+          top: 23px;
+          right: 36px;
         }
-
     }
     &--dark-green {
       background-color: $dark-green;
+      position: relative;
         svg {
           fill: #149080;
           opacity: 0.5;
+          position: absolute;
+          top: 20px;
+          right: 26px;
         }
     }
 }
