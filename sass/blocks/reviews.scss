@@ -28,11 +28,23 @@
   margin-top: 30px;
 }
 
+// подлючие стрелки
 .reviews__nav {
   border: 1px solid #ececec;
   padding: 10px;
   margin-top: 100px;
   margin-bottom: 80px;
+  position: relative;
+  min-width: 260px;
+  max-width: 260px;
+    .reviews__nav-item--prev {
+      position: absolute;
+      top: 10px;
+    }
+    .reviews__nav-item--next {
+      position: absolute;
+      top: 10px;
+    }
 }
 
 @media #{$tablet-widths} {
@@ -56,13 +68,23 @@
     position: absolute;
     bottom: -40px;
     right: 30px;
+    // не убирается рамка
+    border: none;
+      .reviews__nav-item--prev {
+        top: -8px;
+        right: 48px;
+      }
+      .reviews__nav-item--next {
+        top: -8px;
+        right: -40px;
+      }
   }
 
   .reviews__add-btn {
-    width: 175px;
+    width: 171px;
     position: absolute;
-    top: 0px;
-    right: 30px;
+    top: 29px;
+    right: 0;
   }
 }
 

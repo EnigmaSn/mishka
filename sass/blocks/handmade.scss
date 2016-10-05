@@ -48,7 +48,6 @@
       padding-top: 25px;
       padding-bottom: 30px;
       padding-left: 30px;
-      // width: 100%;
       width: 130px;
     }
     a {
@@ -82,16 +81,14 @@
 
 @media #{$tablet-widths} {
   .handmade {
-    min-height: 746px;
-    // background-image: url("../../img/hero-desktop@1x.jpg");
-    // @media
-    // (min-resolution: 1.5dppx),
-    // (min-resolution:144dpi) {
-    //   background-image: url("../../img/hero-desktop@2x.jpg");
-    // }
+    // min-height: 746px;
+    min-height: 744px;
+
       h1 {
         font-size: 43px;
         line-height: 50px;
+        margin-top: 155px;
+        // margin-bottom: 375
       }
   }
 
@@ -106,6 +103,7 @@
   .handmade__stuffs {
     flex-direction: row;
     width: 100%;
+    min-height: 117px;
   }
 
   .handmade__stuff {
@@ -117,9 +115,16 @@
       }
       &--light-green {
         margin-left: 50px;
+         svg {
+           top: 30px;
+         }
       }
       &--dark-green {
         margin-right: 50px;
+        svg {
+          top: 31px;
+          right: 34px;
+        }
       }
   }
 }

@@ -41,21 +41,27 @@
 
 @media #{$tablet-widths} {
 
-  .about-us h2 {
-    margin-top: 60px;
-  }
-  .about-us ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    min-height: 600px;
-    max-height: 600px;
-  }
-
-  .about-us li {
-    max-width: 250px;
-    padding-top: 100px;
-    padding-bottom: 50px;
+  .about-us {
+      h2 {
+        margin-top: 91px;
+        margin-bottom: 0;
+        font-size: 43px;
+        line-height: 50px;
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 600px;
+        min-height: 490px;
+        max-height: 600px;
+        box-sizing: border-box;
+      }
+      li {
+        max-width: 250px;
+        padding-top: 28px;
+        margin-right: 85px;
+      }
   }
 }
 

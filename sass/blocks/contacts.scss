@@ -24,7 +24,6 @@
   margin-bottom: 30px;
 
     span {
-      // @include side-margin;
       margin-left: 30px;
       margin-right: 0;
     }
@@ -42,7 +41,6 @@
 
     span {
       margin-left: 30px;
-      // @include side-margin;
       margin-right: 0;
     }
     a {
@@ -77,8 +75,11 @@
 @media #{$tablet-widths} {
   .contacts {
       h2 {
-        margin-top: 80px;
-        margin-top: 80px;
+        font-size: 43px;
+        line-height: 50px;
+        margin-top: 113px;
+        margin-left: 46px;
+        margin-bottom: 48px;
       }
       img {
         margin-top: 55px;
@@ -88,7 +89,7 @@
   .contacts__wrapper {
     background-image: url("../img/sprite_svg/icon-flag.svg");
     background-repeat: no-repeat;
-    background-position: 700px 0;
+    background-position: 668px 0px;
   }
   .contacts__info {
     display: flex;
@@ -98,15 +99,32 @@
   .contacts__e-mail {
     font-size: 17px;
     line-height: 30px;
+      a {
+        margin-left: 25px;
+      }
   }
   .contacts__adress {
     font-size: 17px;
     line-height: 30px;
+    margin-left: -7px;
+      a {
+        margin-left: 28px;
+        min-width: 200px;
+      }
   }
+
+  .contacts__map {
+    img {
+      margin-top: 57px;
+      margin-bottom: 49px;
+    }
+  }
+
   .contacts__contact-us-btn {
-    width: 230px;
+    width: 226px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 57px;
   }
 }
 

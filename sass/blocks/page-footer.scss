@@ -47,28 +47,40 @@
   display: flex;
   justify-content: center;
   margin-top: 25px;
+  margin-bottom: 25px;
     span {
       font-size: 19px;
       font-weight: bold;
       margin-right: 30px;
-
     }
 }
 
 @media #{$tablet-widths} {
+  .page-footer {
+    min-height: 139px;
+    border-bottom: none;
+  }
   .page-footer__logo {
     display: flex;
-    width: 250px;
+    // width: 250px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
   }
   .page-footer__social {
-    width: 250px;
+    // width: 250px;
+    margin-top: 33px;
+    margin-left: 0;
+    margin-right: 22px;
   }
   .page-footer__made-by {
-    width: 250px;
+    // width: 250px;
+    margin-top: 60px;
+    // margin-right: 80px;
   }
   .page-footer__wrapper {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 }
 
