@@ -131,26 +131,32 @@
 @media #{$desktop-widths} {
   .contacts {
       h2 {
+        font-size: 53px;
+        line-height: 57px;
+        padding-top: 79px;
         padding-left: 175px;
       }
   }
   .contacts__wrapper {
-    background-position: 100px 0;
+    background-position: 113px 70px;
   }
   .contacts__info {
     width: 350px;
     padding-left: 175px;
     flex-direction: column;
   }
+  .contacts__adress {
+    padding-left: 5px;
+  }
   .contacts img {
     position: absolute;
-    right:0;
-    top: 0px;
+    right: 50px;
+    top: -49px;
   }
   .contacts__contact-us-btn {
     margin: 0;
-    margin-top: 50px;
-    margin-bottom: 250px;
+    margin-top: 79px;
+    margin-bottom: 105px;
     margin-left: 225px;
   }
 }

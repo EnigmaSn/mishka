@@ -65,17 +65,22 @@
   }
 }
 
-// не перестраиваются в две колонки
+
 @media #{$desktop-widths} {
   .about-us {
+    margin-bottom: 36px;
     h2 {
-      padding-left: 175px;
+      font-size: 53px;
+      line-height: 57px;
+      padding-left: 171px;
+      margin-top: 102px;
     }
     ul {
       padding-left: 175px
     }
     li {
       width: 350px;
+      margin-right: 100px;
     }
   }
 }

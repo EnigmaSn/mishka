@@ -81,11 +81,13 @@
 
 @media #{$desktop-widths} {
   .review {
+    min-height: 497px;
       h2 {
         padding-left: 175px;
       }
       p {
         padding-left: 175px;
+        margin-bottom: 38px;
     }
   }
   .reviews__item {

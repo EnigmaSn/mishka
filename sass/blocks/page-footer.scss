@@ -86,12 +86,12 @@
 
 @media #{$desktop-widths} {
   .page-footer__logo {
-    width: 350px;
+    margin-right: 290px;
   }
   .page-footer__social {
-    width: 350px;
+    margin-right: 215px;
   }
-  .page-footer__made-by {
-    width: 350px;
-  }
+  // .page-footer__made-by {
+  //   width: 350px;
+  // }
 }
