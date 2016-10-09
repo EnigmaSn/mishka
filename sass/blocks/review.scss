@@ -31,35 +31,6 @@
   @include container;
 }
 
-.reviews__nav {
-  @include side-margin
-  display: inline;
-  min-height: 52px;
-  max-height: 52px;
-  border: 1px solid #ececec;
-}
-
-.reviews__nav-item {
-  padding-left: 27px;
-  padding-right: 27px;
-}
-.reviews__nav-item--next {
-  margin-left: 20px;
-}
-
-.reviews__add-btn {
-  color: $black;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  border: 2px solid $black;
-  display: block;
-  @include side-margin;
-  margin-top: 50px;
-  padding-bottom: 14px;
-}
-
 @media #{$tablet-widths} {
   .review {
     min-height: 490px;
