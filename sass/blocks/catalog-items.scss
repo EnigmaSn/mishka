@@ -75,7 +75,7 @@
 
   .catalog-items__item {
     display: flex;
-
+    margin-bottom: 50px;
       h1 {
       font-size: 20px;
       line-height: 24px;
@@ -83,8 +83,10 @@
       }
   }
   .catalog-items__photo {
-    min-width: 334px;
-    max-width: 334px;
+    // min-width: 334px;
+    // max-width: 334px;
+    // min-height: 334px;
+    // max-height: 334px;
     line-height: 0;
   }
   .catalog-items__info {
@@ -103,11 +105,17 @@
     line-height: 24px;
     padding-right: 200px;
     padding-bottom: 0;
+    padding-top: 22px;
+    padding-bottom: 20px;
 
       svg {
         padding: 0;
         margin: 0;
-        margin-left: 255px;
+        // margin-left: 255px;
+        // padding-top: 0;
+        position: absolute;
+        left: 255px;
+        top: 22px;
       }
   }
 }
