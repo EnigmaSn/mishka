@@ -38,45 +38,30 @@
   border: 2px solid $black;
   display: block;
   @include side-margin;
-  margin-top: 50px;
+  margin-top: 46px;
+  padding-top: 10px;
   padding-bottom: 14px;
 }
 
-// подлючие стрелки
-// .reviews__nav {
-//   @include side-margin
-//   display: inline;
-//   min-height: 52px;
-//   max-height: 52px;
-//   border: 1px solid #ececec;
-// }
-//
-// .reviews__nav-item {
-//   padding-left: 27px;
-//   padding-right: 27px;
-// }
-// .reviews__nav-item--next {
-//   margin-left: 20px;
-// }
-
 .reviews__nav {
-  @include side-margin
+  @include side-margin;
+  width: 100%;
       a {
       border: 1px solid #ececec;
       padding: 0;
       margin: 0;
     }
     .reviews__nav-item--prev {
-      padding-left: 35px;
+      padding-left: 37px;
       padding-right: 40px;
-      padding-top: 17px;
-      padding-bottom: 10px;
+      padding-top: 21px;
+      padding-bottom: 7px;
     }
     .reviews__nav-item--next {
-      padding-left: 40px;
-      padding-right: 35px;
-      padding-top: 17px;
-      padding-bottom: 10px;
+      padding-left: 37px;
+      padding-right: 40px;
+      padding-top: 21px;
+      padding-bottom: 7px;
     }
 }
 

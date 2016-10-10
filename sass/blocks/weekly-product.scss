@@ -75,7 +75,7 @@
   text-align: center;
   display: block;
   padding-top: 18px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
   @include side-margin;
 }
 
@@ -88,8 +88,8 @@
   text-transform: uppercase;
   border: 2px solid $black;
   display: block;
-  // padding-top: 15px;
-  @include btn-padding;
+  padding-top: 12px;
+  padding-bottom: 13px;
   @include side-margin;
   margin-bottom: 35px;
 }
