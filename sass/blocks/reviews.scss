@@ -50,19 +50,19 @@
       border: 1px solid #ececec;
       padding: 0;
       margin: 0;
-    }
-    .reviews__nav-item--prev {
-      padding-left: 37px;
-      padding-right: 40px;
-      padding-top: 21px;
-      padding-bottom: 7px;
-    }
-    .reviews__nav-item--next {
-      padding-left: 37px;
-      padding-right: 40px;
-      padding-top: 21px;
-      padding-bottom: 7px;
-    }
+      }
+      .reviews__nav-item--prev {
+        padding-left: 37px;
+        padding-right: 40px;
+        padding-top: 21px;
+        padding-bottom: 7px;
+      }
+      .reviews__nav-item--next {
+        padding-left: 37px;
+        padding-right: 40px;
+        padding-top: 21px;
+        padding-bottom: 7px;
+      }
 }
 
 @media #{$tablet-widths} {
@@ -84,24 +84,38 @@
   }
   .reviews__nav {
     position: absolute;
-    bottom: 68px;
-    right: -64px;
-    // не убирается рамка
-    border: none;
+    bottom: 89px;
+    right: -574px;
+      a {
+        border: none;
+      }
       .reviews__nav-item--prev {
-        top: -8px;
-        right: 48px;
+        padding-left: 37px;
+        padding-right: 36px;
+        padding-top: 21px;
+        padding-bottom: 7px;
       }
       .reviews__nav-item--next {
-        top: -8px;
-        right: -40px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 21px;
+        padding-bottom: 7px;
       }
+
+      // .reviews__nav-item--prev {
+      //   top: -8px;
+      //   right: 48px;
+      // }
+      // .reviews__nav-item--next {
+      //   top: -8px;
+      //   right: -40px;
+      // }
   }
 
   .reviews__add-btn {
     width: 171px;
     position: absolute;
-    top: 29px;
+    top: 33px;
     right: 0;
   }
 }
@@ -114,5 +128,9 @@
     width: 1150px;
     height: 23px;
     background-size: 100% 23px;
+  }
+  .reviews__nav {
+    bottom: 145px;
+    right: -956px;
   }
 }

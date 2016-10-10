@@ -77,7 +77,8 @@
       h2 {
         font-size: 43px;
         line-height: 50px;
-        margin-top: 113px;
+        padding-top: 20px;
+        margin-top: 93px;
         margin-left: 46px;
         margin-bottom: 48px;
       }
@@ -89,7 +90,7 @@
   .contacts__wrapper {
     background-image: url("../img/sprite_svg/icon-flag.svg");
     background-repeat: no-repeat;
-    background-position: 668px 0px;
+    background-position: 668px 5px;
   }
   .contacts__info {
     display: flex;
@@ -135,6 +136,7 @@
         line-height: 57px;
         padding-top: 79px;
         padding-left: 175px;
+        margin-top: 113px;
       }
   }
   .contacts__wrapper {
