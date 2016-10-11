@@ -8,6 +8,7 @@
       font-weight: bold;
       margin-bottom: 0;
       margin-top: 32px;
+      text-transform: uppercase;
     }
     label {
       font-size: 17px;
@@ -33,7 +34,42 @@
     label {
       display: block;
       margin-top: 30px;
-      padding-left: 36px;
+      padding-left: 63px;
+      position: relative;
+    }
+
+    input[type="radio"]:not(:checked) + label:before {
+      display: table;
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: -9px;
+
+      width: 35px;
+    	height: 35px;
+    	border: 2px solid black;
+    	-moz-border-radius: 50px;
+    	-webkit-border-radius: 50px;
+    	border-radius: 50px;
+    }
+    input[type="radio"]:checked + label:before {
+      display: table;
+      content: "";
+      position: absolute;
+      left: 2px;
+      top: -8px;
+
+      width: 15px;
+    	height: 15px;
+    	border: 10px solid red;
+    	-moz-border-radius: 50px;
+    	-webkit-border-radius: 50px;
+    	border-radius: 50px;
+
+      background: #62d1ba;
+    }
+    input {
+      display: none;
     }
 }
 
@@ -41,6 +77,9 @@
 .knitting-order-form__color {
   display: flex;
   flex-direction: column;
+    h2 {
+      margin-bottom: 30px;
+    }
 }
 .knitting-order-form__color-items {
   @include side-margin;
@@ -48,17 +87,41 @@
 .knitting-order-form__color-item {
   display: block;
   align-self: baseline;
-  padding-top: 33px;
-  padding-bottom: 6px;
+  padding-bottom: 34px;
     label {
-      margin-top: 30px;
+      // margin-top: 30px;
       padding-left: 36px;
+      padding-left: 63px;
+      position: relative;
+    }
+    label:before {
+      display: table;
+      content: "";
+      position: absolute;
+      // // left: 0px;
+      top: -9px;
+
+      width: 36px;
+    	height: 35px;
+    	border: 2px solid black;
+    }
+    input[type="checkbox"]:checked + label:before {
+      background-image: url("../img/sprite_svg/icon-tick.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 70%;
+    }
+    input {
+      display: none;
     }
 }
 
 // имя
 .knitting-order-form__name {
   display: flex;
+    h2 {
+
+    }
     label {
       display: block;
       width: 100%;
