@@ -64,20 +64,6 @@
     	border-radius: 50px;
     }
     input[type="radio"]:checked + label:before {
-      // display: table;
-      // content: "";
-      // position: absolute;
-      // left: 2px;
-      // top: -8px;
-      //
-      // width: 15px;
-    	// height: 15px;
-    	// border: 10px solid red;
-    	// -moz-border-radius: 50px;
-    	// -webkit-border-radius: 50px;
-    	// border-radius: 50px;
-      //
-      // background: #62d1ba;
       background-image: url("../img/point.png");
       background-repeat: no-repeat;
       background-position: 50%;
@@ -103,7 +89,6 @@
   align-self: baseline;
   padding-bottom: 34px;
     label {
-      // margin-top: 30px;
       padding-left: 36px;
       padding-left: 63px;
       position: relative;
@@ -112,7 +97,6 @@
       display: table;
       content: "";
       position: absolute;
-      // // left: 0px;
       top: -9px;
 
       width: 36px;
@@ -257,6 +241,12 @@
       bottom: 10px;
       left: 80px;
     }
+
+}
+
+.knitting-order-form__e-mail-btn {
+  position: relative;
+
     input {
       @include side-margin;
       min-width: 260px;
@@ -289,6 +279,7 @@
       right: 115px;
     }
 }
+
 
 .knitting-order-form__more {
   display: flex;
@@ -364,15 +355,44 @@
 }
 
 @media #{$tablet-widths} {
+  .knitting-order-form {
+    h2:after {
+      display: none;
+    }
+    label {
+      font-size: 19px;
+      line-height: 18px;
+      font-weight: bold;
+    }
+  }
   .knitting-order-form__wrapper {
     flex-direction: row;
   }
   .knitting-order-form__type {
     flex-direction: row;
     align-items: baseline;
+    margin-top: 50px;
+    padding-bottom: 45px;
   }
   .knitting-order-form__btn-type {
     margin-left: 0;
+
+    label {
+      display: block;
+      margin-top: 32px;
+      padding-left: 81px;
+      position: relative;
+      font-weight: bold;
+      padding-bottom: 26px;
+    }
+    input[type="radio"] + label:before {
+      top: -14px;
+      width: 48px;
+      height: 48px;
+    }
+    input[type="radio"]:checked + label:before {
+      background-size: 45%;
+    }
   }
   .knitting-order-form__title {
     min-width: 167px;
@@ -382,6 +402,11 @@
     flex-direction: row;
     align-items: baseline;
     background-color: #f1f1f1;
+    padding-top: 72px;
+    padding-bottom: 24px;
+      h2 {
+        margin-top: 0px;
+      }
   }
   .knitting-order-form__color-items {
     display: flex;
@@ -390,6 +415,7 @@
     max-width: 700px;
     flex-wrap: wrap;
     margin-left: 0;
+    min-height: 230px;
   }
   .knitting-order-form__color-item {
     flex-direction: row;
@@ -397,38 +423,164 @@
     width: 262px;
     min-width: 262px;
     max-width: 262px;
+
+    label {
+      padding-left: 36px;
+      padding-left: 82px;
+      position: relative;
+    }
+    label:before {
+      display: table;
+      content: "";
+      position: absolute;
+      top: -12px;
+
+      width: 50px;
+      height: 48px;
+      border: 2px solid black;
+    }
+    input[type="checkbox"]:checked + label:before {
+      background-image: url("../img/sprite_svg/icon-tick.svg");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 70%;
+    }
   }
   .knitting-order-form__name {
     flex-direction: column;
+    padding-top: 43px;
+    padding-bottom: 22px;
+      h2 {
+        margin-top: 19px;
+      }
   }
   .knitting-order-form__name-btn {
     margin-left: 0;
   }
+  .knitting-order-form__names {
+    display: flex;
+    margin-bottom: 18px;
+      label {
+        // min-width: 50px;
+        // max-width: 50px;
+        margin-right: 35px;
+      }
+      input {
+        min-width: 360px;
+        max-width: 360px;
+        height: 40px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 6px;
+      }
+      ::-webkit-input-placeholder {
+        font-size: 19px;
+        line-height: 18px;
+      }
+      ::-moz-placeholder {
+        font-size: 19px;
+        line-height: 18px;
+      }
+      :-moz-placeholder {
+        font-size: 19px;
+        line-height: 18px;
+      }
+      :-ms-input-placeholder {
+        font-size: 19px;
+        line-height: 18px;
+      }
+  }
   .knitting-order-form__phone {
     background-color: #f1f1f1;
+    padding-top: 65px;
+    padding-bottom: 35px;
+      label {
+        padding-top: -5px;
+      }
+      label:after {
+        display: none;
+      }
   }
+
   .knitting-order-form__phone-btn {
     input {
-      margin-left: 0;
+      margin-left: 0px;
+      margin-top: -10px;
+      padding-top: 0px;
+      padding-bottom: 4px;
+      padding-left: 18px;
       background-color: #f1f1f1;
+      min-width: 483px;
+      max-width: 483px;
+      height: 40px;
+    }
+    svg {
+      right: 75px;
+      top: 0;
     }
   }
   .knitting-order-form__e-mail {
     background-color: #f1f1f1;
-      input {
-        margin-left: 0;
-        background-color: #f1f1f1;
+    margin-top: 0;
+    padding-bottom: 67px;
+      label:after {
+        display: none;
+      }
+  }
+
+.knitting-order-form__e-mail-btn {
+  input {
+    margin-left: 0;
+    margin-top: -7px;
+    padding-left: 15px;
+    background-color: #f1f1f1;
+    min-width: 486px;
+    max-width: 486px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    height: 40px;
+  }
+  svg {
+    top: 5px;
+    right: 70px;
+  }
+}
+  .knitting-order-form__more {
+    padding-top: 50px;
+
+      label:after {
+        display: none;
       }
   }
   .knitting-order-form__more-btn {
     textarea {
       margin-left: 0;
+      margin-top: -11px;
+      min-width: 480px;
+      max-width: 480px;
+    }
+  }
+  .knitting-order-form__info {
+    padding-top: 55px;
+    span {
+      font-size: 17px;
+      line-height: 30px;
+      margin-left: 65px;
     }
   }
   .knitting-order-form__order-button {
     order: -1;
+    margin: 0;
+    margin-top: 45px;
+    padding-bottom: 52px;
+  }
+  .knitting-order-form__order-btn  {
+    padding-left: 27px;
+    padding-right: 43px;
+    margin-bottom: 0;
   }
 }
+
 
 @media #{$desktop-widths} {
   .knitting-order-form__title {
