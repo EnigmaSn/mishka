@@ -78,8 +78,9 @@
     	// border-radius: 50px;
       //
       // background: #62d1ba;
-      background: url(data:image/svg+xml;base64,[PHN2Zz4KICAgIDxjaXJjbGUgcj0iMTAiIGN4PSI1MCUiIGN5PSI1MCUiLz4KPC9zdmc+]);
-
+      background-image: url("../img/point.png");
+      background-repeat: no-repeat;
+      background-position: 50%;
     }
     input {
       display: none;
@@ -134,24 +135,42 @@
   display: flex;
     h2 {
       margin-top: 0;
+      margin-bottom: 9px;
     }
     label {
       display: block;
       width: 100%;
-      padding-top: 24px;
-    }
-    label:nth-child(1) {
-      padding-top: 30px;
+      padding-top: 22px;
+      font-size: 17px;
+      line-height: 18px;
+      font-weight: bold;
     }
 }
 .knitting-order-form__name-btn {
   @include side-margin;
     input {
-      min-width: 257px;
-      max-width: 257px;
+      min-width: 260px;
+      max-width: 260px;
       height: 46px;
+      padding-bottom: 3px;
       border: 0;
       border-bottom: 2px solid black;
+    }
+    ::-webkit-input-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    ::-moz-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    :-moz-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    :-ms-input-placeholder {
+      font-size: 17px;
+      line-height: 18px;
     }
 }
 
@@ -159,7 +178,7 @@
 .knitting-order-form__phone {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 27px;
 
     label {
       color: $light-green;
@@ -178,21 +197,49 @@
       bottom: 10px;
       left: 60px;
     }
+}
+
+.knitting-order-form__phone-btn {
+  position: relative;
     input {
       @include side-margin;
-      min-width: 257px;
-      max-width: 257px;
+      min-width: 260px;
+      max-width: 260px;
+      height: 51px;
       border: 0;
       border-bottom: 2px solid black;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 2px;
+      padding-bottom: 0px;
+      position: relative;
+    }
+    ::-webkit-input-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    ::-moz-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    :-moz-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    :-ms-input-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    svg {
+      position: absolute;
+      right: 38px;
+      top: 14px;
     }
 }
 
 .knitting-order-form__e-mail {
   display: flex;
   flex-direction: column;
-  margin-top: 36px;
+  margin-top: 32px;
+  position: relative;
     label {
       color: $light-green;
       font-size: 17px;
@@ -212,12 +259,34 @@
     }
     input {
       @include side-margin;
-      min-width: 257px;
-      max-width: 257px;
+      min-width: 260px;
+      max-width: 260px;
       border: 0;
       border-bottom: 2px solid black;
-      padding-top: 20px;
-      padding-bottom: 20px;
+      padding-top: 15px;
+      padding-bottom: 12px;
+      position: relative;
+    }
+    ::-webkit-input-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    ::-moz-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    :-moz-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    :-ms-input-placeholder {
+      font-size: 17px;
+      line-height: 18px;
+    }
+    svg {
+      position: absolute;
+      top: 50px;
+      right: 115px;
     }
 }
 
