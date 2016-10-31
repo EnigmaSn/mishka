@@ -10,10 +10,10 @@
       font-weight: bold;
       text-align: center;
       margin: 0;
-      margin-top: 93px;
+      margin-top: 87px;
       margin-left: 38px;
       margin-right: 38px;
-      margin-bottom: 122px;
+      margin-bottom: 119px;
     }
 }
 
@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: -12px;
 
   background-image: url("../../img/hero-mobile@1x.jpg");
   @media
@@ -29,7 +30,7 @@
   (min-resolution:144dpi) {
       background-image: url("../../img/hero-mobile@2x.jpg");
     }
-  background-position: 50% 21% ;
+  background-position: 50% 10% ;
   background-repeat: no-repeat;
 }
 
