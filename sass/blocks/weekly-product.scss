@@ -37,6 +37,9 @@
 }
 .weekly-product__titles {
   margin-bottom: 21px;
+    h2 {
+      margin-bottom: 0px;
+    }
 }
 .weekly-product__title {
   color: $light-green;

@@ -22,13 +22,6 @@
   left: 0;
 }
 
-// .reviews__add-btn {
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   margin-top: 30px;
-//   position: relative;
-// }
-
 .reviews__add-btn {
   color: $black;
   font-size: 18px;
@@ -38,7 +31,7 @@
   border: 2px solid $black;
   display: block;
   @include side-margin;
-  margin-top: 46px;
+  margin-top: 40px;
   padding-top: 10px;
   padding-bottom: 14px;
 }
@@ -55,13 +48,13 @@
         padding-left: 37px;
         padding-right: 40px;
         padding-top: 21px;
-        padding-bottom: 7px;
+        padding-bottom: 0px;
       }
       .reviews__nav-item--next {
         padding-left: 37px;
         padding-right: 40px;
         padding-top: 21px;
-        padding-bottom: 7px;
+        padding-bottom: 0px;
       }
 }
 
